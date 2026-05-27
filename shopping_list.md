@@ -27,7 +27,7 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 
 | Item | Qty | Unit | Notes |
 |------|-----|------|-------|
-| Class 6 crushed aggregate (road base) | **5 cu yd** | bulk | 4" compacted base under all paving |
+| Class 6 road base (search: "Class 6 road base" or "3/4 minus road base") | **5 cu yd** | bulk | 4" compacted base under all paving; ¾" max particle, compacts solid |
 | Coarse concrete sand (bedding) | **1.5 cu yd** | bulk | 1" setting bed on top of base |
 
 > **Where to buy:** Order bulk from a local landscape/aggregate supplier — much cheaper than bags.
