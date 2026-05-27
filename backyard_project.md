@@ -1,0 +1,548 @@
+# Backyard Renovation Project — AI Agent Handoff Document
+
+> **Purpose:** This document contains all project context, ground truth data, design decisions, and current status needed for an AI agent to continue optimizing this renovation project without loss of context.
+>
+> **Property:** 8958 Fraser River Street, Littleton, CO
+> **Lot:** 137, Sterling Ranch Filing No. 4A, Douglas County
+> **Plot Plan Source:** Aztec Consultants, Inc. — dated 5/18/2021, Scale 1" = 20'
+
+---
+
+## Table of Contents
+
+1. [Ground Truth Data](#1-ground-truth-data)
+2. [Spatial Orientation](#2-spatial-orientation)
+3. [Existing Conditions](#3-existing-conditions)
+4. [Design Decisions (Confirmed)](#4-design-decisions-confirmed)
+5. [SVG Plan Version History](#5-svg-plan-version-history)
+6. [Material Quantities & Budget](#6-material-quantities--budget)
+7. [Construction Plan Summary](#7-construction-plan-summary)
+8. [Open Questions & Next Steps](#8-open-questions--next-steps)
+9. [Conversation Key Decisions Log](#9-conversation-key-decisions-log)
+10. [File Index](#10-file-index)
+
+---
+
+## 1. Ground Truth Data
+
+> **CRITICAL:** All design and construction calculations must use these values as the single source of truth. Do not estimate or approximate these figures — they come directly from the official plot plan.
+
+### Lot Dimensions
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Lot area | 6,448 sq ft | Plot plan legal description |
+| Plot plan scale | 1" = 20' | Title block |
+| Working scale used in SVG | 1 ft = 8 px | Derived |
+
+### Backyard Boundary Dimensions
+
+| Boundary | Direction | Length | Notes |
+|----------|-----------|--------|-------|
+| East fence | N–S | **66.19 ft** | Rear boundary, confirmed from plot plan |
+| South boundary (lot edge) | E–W | **115.19 ft** | East side of lot |
+| North boundary (lot edge) | E–W | ~115 ft | West side, partially obscured by engineer stamp |
+| West boundary (street) | — | Curved arc | L=37.06/R=250 + L=45.06/R=250 |
+
+### House & Backyard Key Measurements
+
+| Item | Measurement | Notes |
+|------|-------------|-------|
+| Backyard width (N–S) | **66.19 ft** | Total east fence span |
+| Backyard depth (E–W) | **~45 ft** | House rear wall to east fence |
+| North side setback | **18.1 ft** | House north wall to north fence |
+| South side setback | **9.96 ft** | House south wall = South Pathway width |
+| Deck dimensions | **20 × 10 ft** | Within house footprint (see §3) |
+| Staircase dimensions | **~20 ft × 4 ft** | Cantilevered on east wall exterior |
+| Rear yard setback (regulatory) | **15 ft** | Douglas County requirement |
+| Side setbacks | **5 ft** (corner: 7 ft) | Douglas County requirement |
+
+### Elevation & Grade Data
+
+| Location | Value | Notes |
+|----------|-------|-------|
+| Finished floor elevation (FF) | **5,721.3 ft** | Above sea level |
+| Top of foundation (TOF) | **5,720.1 ft** | |
+| Lawn slope (main) | **7.9%** | Slopes east (toward fence) |
+| North patio extension slope | **10%** | Slopes east |
+| South Pathway slope | **13%** | Steepest zone, slopes east |
+| Deck area slope | **10%** | |
+
+### Regulatory Setbacks Summary
+
+```
+East (rear) fence:  ←————— 15 ft setback ——————|  ← no permanent structures east of this line
+North fence:        5 ft setback
+South fence:        5 ft setback (corner: 7 ft)
+```
+
+---
+
+## 2. Spatial Orientation
+
+> **IMPORTANT for SVG/plan reading:** The plot plan is rotated from conventional north-up orientation.
+
+```
+Plot plan orientation:
+  UP    = East (slightly south of true east)
+  DOWN  = West
+  LEFT  = North (slightly west of true north)
+  RIGHT = South
+
+Real-world house orientation:
+  House faces west (street side = Fraser River Street)
+  Backyard opens east
+  Morning sun hits backyard; afternoon shade from house
+```
+
+### SVG Coordinate System (used in all plan files)
+
+```
+X-axis: West → East  (left to right)
+Y-axis: North → South (top to bottom)
+1 ft = 8 px
+
+Key X coordinates:
+  X=20   House west wall (edge of canvas)
+  X=80   Existing Patio west edge / North Patio Extension west edge
+  X=160  House east wall (rear wall)
+  X=192  Staircase east edge / South Pathway east terminus
+  X=224  East Corridor east edge / East South Strip east edge
+  X=468  Lawn east edge (6.5 ft buffer from east fence)
+  X=520  East fence
+
+Key Y coordinates:
+  Y=80   North fence
+  Y=105  North Patio Extension north edge
+  Y=160  Lawn north edge (~10 ft south of north fence)
+  Y=225  House north wall / existing Patio north edge / staircase top
+  Y=257  Arc cut terminus (east corridor starts full width here)
+  Y=385  Existing Patio south edge / staircase base / east corridor south
+  Y=530  House south wall / South Pathway north edge
+  Y=610  South fence (South Pathway south edge)
+```
+
+---
+
+## 3. Existing Conditions
+
+### House Structure (Rear/East Face)
+
+```
+┌─────────────────────────────────┐  ← House north wall (Y=225)
+│                                 │
+│   DECK (20×10 ft)               │  Deck is INSIDE house footprint
+│   Second floor, east side       │  X=80~160, Y=225~385
+│   White railings                │
+│                                 │
+│   PATIO (20×10 ft)              │  Ground floor, directly below Deck
+│   Concrete slab                 │  X=80~160, Y=225~385
+│   Currently used for storage    │
+│                                 │
+└─────────────────────────────────┘  ← House south wall (Y=530)
+         │
+    STAIRCASE                         Cantilevered outside east wall
+    X=160~192, Y=225~385              ~4 ft wide × 20 ft long
+    Descends from Deck NE corner      Runs N→S, lands at Y=385
+    Has step treads visible in plan
+```
+
+### Existing Water & Hardscape
+
+| Element | Location | Condition | Plan |
+|---------|----------|-----------|------|
+| Concrete patio (walkout) | X=80~160, Y=225~385 | Functional, cluttered | Clear & reuse |
+| South Pathway | X=20~192, Y=530~610 | 9.96 ft wide, 13% slope | Retain as-is |
+| East wall concrete strip | X=160~192, Y=385~530 | Staircase-width strip | Extend eastward |
+| L-turn at SE corner | X=160~192, Y≈530 | Connects strip to pathway | Retain |
+| Downspout (north side) | ~X=155, Y=145 | Surface exit in patio zone | Reroute underground |
+
+### Existing Vegetation
+
+| Plant | Location | Status |
+|-------|----------|--------|
+| Pear tree | NE corner, near X=498, Y=80 (north fence) | Retain |
+| 3× Garden Boxes | Along north fence, west of pear tree | Retain all 3 |
+| Pine tree | SE corner, near east fence, close to south pathway | Retain |
+| Lawn | X=192~468, Y=160~385 (approx.) | Sparse, weedy — reduce & reseed |
+
+### Existing Irrigation System
+
+| Component | Description |
+|-----------|-------------|
+| West main pipe | N–S orientation, near X=192, 4 sprinkler heads |
+| East main pipe | N–S orientation, near X=462, 4 sprinkler heads |
+| Entry point | Both pipes enter from north extension zone (under proposed patio) |
+| Coverage | Current 8 heads cover full existing lawn |
+| Issue | Both pipes will be covered by new North Patio Extension |
+
+### Lawn Issues
+
+- Center section: bare/sparse — poor soil, insufficient water
+- North section (near north fence): better quality due to shade
+- South section: below average
+- East boundary: weeds constantly invade from open rangeland outside east fence
+- Overall: difficult to maintain due to slope, dry climate, weed pressure
+
+---
+
+## 4. Design Decisions (Confirmed)
+
+> All items below have been explicitly confirmed by the homeowner during conversation. Do not change without re-confirmation.
+
+### 4.1 Patio System (Phase 1)
+
+**North Patio Extension**
+- Size: ~14 ft × 15 ft = 210 sq ft
+- Location: North of existing patio, X=80~192, Y=105~225
+- Material: Natural flagstone OR large concrete pavers (24"×24" or 24"×48") — homeowner to choose
+- Purpose: Outdoor dining area + grill station
+- Feature: Low seat wall (12–15" high, 16–18" wide) at Y=225 separating from existing patio level
+- Grade handling: 10% slope → two-tier terrace; north extension sits ~12–15" lower than existing patio
+
+**Curved Diagonal Cut (Arc)**
+- Shape: Curved arc (NOT straight line) — confirmed in v10+
+- Start: Existing patio NE corner at (X=192, Y=225)
+- End: East corridor at (X=224, Y=257)
+- Direction: ~45° SE diagonal arc
+- Effect: Upper-right triangle (lawn side) = green; lower-left triangle (patio side) = paving
+
+**East Corridor**
+- Size: ~4 ft wide × 20 ft long = ~78 sq ft (net of arc cutout)
+- Location: X=192~224, Y=225~385 (east of staircase)
+- Purpose: Bypass staircase, connect north patio to east south strip
+- Matches staircase height (flush or 0.25" lower)
+- Expansion joint between corridor and staircase: 0.5"
+
+**East South Strip**
+- Size: 4 ft wide × 18 ft long = 72 sq ft
+- Location: X=192~224, Y=385~530
+- Purpose: Continue circulation south to South Pathway
+- Expansion joint at South Pathway connection: 0.5"
+
+**Full Patio Outline (SVG polygon)**
+```
+Points: (80,105) → (192,105) → (192,225) → arc to (224,257) → (224,530) → (160,530) → (160,385) → (80,385)
+```
+
+### 4.2 Fire Pit
+
+- Type: **Portable / movable** (not built-in)
+- Location: At boundary of lawn and mulch bed, ~center-east area
+- Zone: 10 ft diameter circle, ~79 sq ft
+- Ground prep: Level pad, 4" compacted gravel base
+- Clearances: ≥10 ft from structure, ≥10 ft from fence
+
+### 4.3 Lawn
+
+- **Retain**: ~870 sq ft (approx. 34 ft × 28 ft minus fire pit circle)
+  - Concentrated in north zone (better shade, better turf)
+  - X=224~468, Y=160~385
+- **Remove**: ~612 sq ft south section (becomes mulch bed)
+- **Reseeding**: Fine Fescue (shaded/north) or Tall Fescue (traffic areas)
+- **Weed barrier strip**: 2 ft wide along east fence interior (entire 66 ft length) to block rangeland weed invasion
+
+### 4.4 Mulch Planting Bed
+
+- Area: ~612 sq ft (X=224~468, Y=385~530)
+- Materials: Commercial-grade weed barrier + black dyed mulch, 3" depth
+- Features: Stepping stones (10× 24"×18" stones) winding through bed
+- Drip irrigation branch from west main pipe
+
+### 4.5 East Buffer Strip
+
+- Existing black mulch arc already present — **retain as-is**
+- No construction work needed
+- Pine tree in SE corner — retain
+
+### 4.6 Garden Boxes
+
+- **3 existing boxes retained** — no new boxes
+- Located along north fence, west of pear tree, evenly spaced
+- Maintenance: Add 2" mulch to pathways around boxes (~96 sq ft)
+
+### 4.7 Irrigation System
+
+- **To be done by contractor** (Phase 0, before any paving)
+- West pipe: shift ~4 ft east to clear east corridor
+- Both pipes: install 4" PVC conduit sleeve (~30 ft total) under new patio
+- Heads: reduce 8 → 6 (3 per pipe, 180° half-circle nozzles, ~9 ft spacing)
+- New: drip irrigation for mulch bed (~612 sq ft, 12" line spacing)
+
+### 4.8 Downspout
+
+- **To be done by contractor** (Phase 0)
+- 4" PVC underground, ~12 ft, buried 12", pop-up emitter at lawn edge
+
+### 4.9 Items Explicitly REMOVED from Scope
+
+| Item | Reason |
+|------|--------|
+| Plant installation in mulch bed | Homeowner will handle separately |
+| North privacy planting (Serviceberry) | Removed from scope |
+| Garden box expansion (new boxes) | Already have 3, no expansion needed |
+| East buffer strip renovation | Black mulch already exists, retain as-is |
+
+### 4.10 South Pathway
+
+- **Fully retain** existing concrete
+- Width: 9.96 ft, slope: 13%
+- Terminus: Ends at X=192 (east wall of staircase strip), does NOT continue east
+- Future: Plant drought-tolerant plants on both sides (low priority)
+
+---
+
+## 5. SVG Plan Version History
+
+| Version | File | Key Changes |
+|---------|------|-------------|
+| v1 | backyard_plan.svg | Initial draft — incorrect deck position, wrong orientation |
+| v2 | backyard_plan_v2.svg | Corrected deck inside house, staircase exterior |
+| v3 | backyard_plan_v3.svg | Corrected patio fully inside house, L-shaped concrete strip |
+| v4 | backyard_plan_v4.svg | Fixed staircase length = patio length (20 ft), north patio from X=80 |
+| v5 | backyard_plan_v5.svg | Corrected lawn boundaries (N: 10 ft gap, E: 6.5 ft gap), garden box to N fence, pathway ends at X=192 |
+| v6 | backyard_plan_v6.svg | Added east corridor + east south strip, diagonal cut, pathway extended to X=224 |
+| v7 | backyard_plan_v7.svg | Diagonal cut moved to (192,225)→(224,257), 45° |
+| v8 | backyard_plan_v8.svg | Lawn polygon extended to fill NE strip and diagonal triangle (error — wrong fill) |
+| v9 | backyard_plan_v9.svg | Lawn polygon corrected to Y=225 stop |
+| v10 | backyard_plan_v10.svg | Diagonal corrected: upper-right = lawn, lower-left = patio; straight line used |
+| **v11** | **backyard_plan_v11.svg** | **Current: Arc cut, black mulch strip, 3 garden boxes, stepping stones, pine tree SE, irrigation system** |
+
+### Current SVG (v11) Zone Color Key
+
+| Zone | Fill Color | Hex |
+|------|-----------|-----|
+| House | Gray-beige | `#d0c8b8` |
+| Existing Patio / Deck overlay | Medium gray | `#b8b0a8` |
+| Staircase | Tan/wood | `#e8d0a0` |
+| Existing concrete strip + Pathway | Gray | `#a8a090` |
+| North Patio Extension (new) | Light gray dashed | `#c8c0b8` |
+| East Corridor + East South Strip (new) | Light gray dashed | `#c8c0b8` |
+| Lawn | Green | `#7ab648` |
+| Mulch planting bed | Brown | `#a07850` |
+| East buffer strip | Dark brown | `#8B6040` |
+| Black mulch arc in buffer strip | Near-black strokes | `#1a1a1a` |
+| Fire pit | Orange circle | `#d4956a` |
+| North planting strip | Dark green | `#5a7a40` |
+| Garden boxes | Tan/gold | `#c8a060` |
+| Pear tree / Pine tree | Dark green circle | `#3a7a28` |
+| Irrigation pipes | Blue | `#4090d0` |
+| Sprinkler heads | Blue dot + fan | `#4090d0` |
+| East fence | Brown dashed | `#8B6914` |
+| Arc cut line | Red | `#e05050` |
+| Slope arrows | Orange | `#d06010` |
+| 15 ft setback line | Red dashed | `#e03030` |
+
+---
+
+## 6. Material Quantities & Budget
+
+### Area Summary
+
+| Zone | Dimensions | Area |
+|------|-----------|------|
+| North Patio Extension | 14 ft × 15 ft | 210 sq ft |
+| East Corridor | 4 ft × 20 ft − arc (~2 sq ft) | ~78 sq ft |
+| East South Strip | 4 ft × 18 ft | 72 sq ft |
+| **Total new paving** | | **~360 sq ft** |
+| Lawn (retained) | ~34 ft × 28 ft − fire pit | ~870 sq ft |
+| Mulch planting bed | ~34 ft × 18 ft | ~612 sq ft |
+| Fire pit circle | dia. 10 ft | ~79 sq ft |
+
+### Material Quantities
+
+| Material | Calculation | Quantity | Unit |
+|----------|------------|----------|------|
+| Class 6 aggregate base (4") | 360 sqft × 4/12 ft × 1.05 waste | **~5 cu yd** | (~135 cu ft) |
+| Coarse sand bedding (1") | 360 sqft × 1/12 ft × 1.05 waste | **~1.5 cu yd** | (~34 cu ft) |
+| Flagstone (option A) | 360 sqft × 1.10 waste | **~396 sqft / ~3.5–4.6 tons** | 15–20 lb/sqft |
+| Concrete pavers 24"×24" (option B) | 360 sqft / 4 sqft × 1.10 | **~100 units / ~1,800 lb** | 18 lb/unit |
+| CMU blocks 8×8×16" (seat wall) | 14 ft × 3 courses × ~11 blocks/course | **~33 blocks** | |
+| Mortar mix | Seat wall | **~2 bags** | 60 lb/bag |
+| Polymeric sand | ~1 bag/100 sqft | **~4 bags** | 50 lb/bag |
+| Flexible metal edging | Patio perimeter + arc | **~60 ft** | |
+| Polyurethane sealant | Expansion joints | **~1.5 tubes** | 10 oz/tube |
+| PVC conduit sleeve 4" | Irrigation under patio | **~30 ft** | |
+| Commercial weed barrier | 612 sqft × 1.10 | **~675 sqft** | |
+| Garden staples / U-pins | 675 sqft × 0.15/sqft | **~100 units** | |
+| Black dyed mulch (3") | 612 sqft × 3/12 × 1.10 | **~6.2 cu yd** | (~168 cu ft) |
+| Mulch for box pathways (2") | 96 sqft × 2/12 | **~0.6 cu yd** | (~16 cu ft) |
+| Stepping stones 24×18" | 10 units | **~10 units / ~33 sqft** | |
+| Fine/Tall Fescue seed | 870 sqft / 1000 × 5.5 lb | **~5 lb** | |
+| Premium topsoil | 870 sqft × 2.5/12 ft | **~5 cu yd** | (~145 cu ft) |
+| Straw mulch | 870 sqft / 500 sqft per bale | **~2 bales** | |
+
+### Excavation Volumes
+
+| Zone | Area | Depth | Volume |
+|------|------|-------|--------|
+| North patio extension | 210 sqft | 6" | ~105 cu ft (~3.9 cu yd) |
+| East corridor | ~78 sqft | 6" | ~39 cu ft (~1.5 cu yd) |
+| East south strip | 72 sqft | 6" | ~36 cu ft (~1.3 cu yd) |
+| Mulch bed removal | 612 sqft | 4" | ~204 cu ft (~7.6 cu yd) |
+| Fire pit | ~79 sqft | 7" avg | ~46 cu ft (~1.7 cu yd) |
+| **Total** | | | **~430 cu ft (~15.9 cu yd)** |
+
+### Budget Summary
+
+| Category | Low | High | Notes |
+|----------|-----|------|-------|
+| Contractor: irrigation reroute | $800 | $1,200 | Sleeve + pipe + heads + drip |
+| Contractor: downspout reroute | $200 | $400 | PVC 12 ft underground |
+| Phase 1: aggregate + sand | $250 | $450 | 5 + 1.5 cu yd |
+| Phase 1: flagstone paving | $1,200 | $2,400 | ~396 sqft |
+| Phase 1: (alt.) concrete pavers | $600 | $1,200 | ~100 units |
+| Phase 1: seat wall + mortar | $100 | $190 | 33 blocks |
+| Phase 1: polymeric sand + edging + sealant | $125 | $225 | |
+| Phase 1: tool rentals | $230 | $380 | Compactor + grinder + sod cutter |
+| Phase 2: topsoil + seed + straw | $170 | $340 | |
+| Phase 2: weed barrier + mulch (bed) | $235 | $410 | |
+| Phase 2: stepping stones + staples | $90 | $180 | |
+| Phase 2: box pathways mulch | $30 | $60 | |
+| Misc. | $50 | $100 | |
+| **DIY Total (flagstone)** | **$2,480** | **$4,935** | |
+| **DIY Total (paver)** | **$1,880** | **$4,335** | |
+| **Grand Total incl. contractor (flagstone)** | **$3,480** | **$6,535** | |
+| **Grand Total incl. contractor (paver)** | **$2,880** | **$5,935** | |
+
+---
+
+## 7. Construction Plan Summary
+
+### Phase 0 — Contractor (Pre-season, before any paving)
+
+1. **Downspout reroute**: 4" PVC, 12 ft, 12" deep, pop-up emitter at lawn edge
+2. **Irrigation sleeve**: 4" PVC conduit, ~30 ft, through planned patio footprint
+3. **West pipe reroute**: shift ~4 ft east (old X≈192 → new X=224 edge)
+4. **Head adjustment**: 8 → 6 heads (cap 2, install 2× 180° half-circle nozzles)
+5. **Mulch drip line**: branch from west pipe, 612 sqft at 12" spacing
+
+### Phase 1 — DIY (May–September)
+
+| Step | Task | Duration |
+|------|------|----------|
+| 1-A | Site clearing — 3 zones, total ~6.7 cu yd excavation | 1 day |
+| 1-B | Base course — 5 cu yd Class 6 + 1.5 cu yd sand, compact | 1 day |
+| 1-C | North patio paving (210 sqft) + seat wall (14 ft, 3 courses) | 2–3 days |
+| 1-D | East corridor (78 sqft) + arc cut + staircase joint | 1–2 days |
+| 1-E | East south strip (72 sqft) + South Pathway joint | 1 day |
+| 1-F | Fire pit zone — excavate ~1.7 cu yd, gravel base, edging | 0.5 day |
+
+### Phase 2 — DIY (March–April or August–September)
+
+| Step | Task | Duration |
+|------|------|----------|
+| 2-A | Lawn: remove 612 sqft sod, amend 870 sqft, reseed, straw | 1–2 days |
+| 2-B | Mulch bed: remove gravel, weed barrier, stepping stones, mulch | 1–2 days |
+| 2-C | Garden box surrounds: 96 sqft mulch paths, tree rings | 0.5 day |
+
+**Total estimated DIY labor: 10–14 working days**
+
+### Key Construction Rules
+
+- **Call 811** before ANY digging (Colorado state law)
+- **4" compacted Class 6 base** is mandatory for all paved surfaces — freeze-thaw protection
+- **2% drainage slope** on all paved surfaces, draining away from house
+- All paved surfaces must respect **15 ft east setback** and **5 ft side setbacks**
+- **Arc cut**: angle grinder in 3–4 shallow passes, flexible metal edging to retain edge
+- **Expansion joints**: 0.5" gap at staircase joint and South Pathway joint, filled with polyurethane sealant (NOT polymeric sand)
+- Seat wall: **mortar-set** (not dry-stack) for stability in freeze-thaw
+
+---
+
+## 8. Open Questions & Next Steps
+
+### Pending Homeowner Decisions
+
+- [ ] **Paving material choice**: Natural flagstone vs. concrete pavers 24"×24" — affects cost by ~$600–1,200
+- [ ] **Seat wall material**: Match paving stone vs. separate natural stone vs. concrete block
+- [ ] **Mulch bed planting**: Species selection for planting bed (not in current scope — homeowner to handle separately)
+- [ ] **Contractor selection**: Get 2–3 quotes for Phase 0 irrigation work
+- [ ] **HOA approval**: Submit application before construction
+
+### Potential Agent Tasks (Optimization Opportunities)
+
+- [ ] Generate a detailed **materials shopping list** with Home Depot / Lowe's SKUs for Denver metro area
+- [ ] Create a **Gantt chart** or timeline visualization for the construction phases
+- [ ] Generate **detailed paver layout patterns** (running bond, herringbone, etc.) for the 360 sqft patio area
+- [ ] Calculate **exact seat wall coursing** (dimensions, mortar joints, cap details)
+- [ ] Produce a **plant palette list** for the mulch bed (drought-tolerant, Zone 5b-6a, deer-resistant options for Colorado)
+- [ ] Generate a **3D perspective sketch** or enhanced visual based on the v11 SVG
+- [ ] Create a **contractor bid request template** for the irrigation work
+- [ ] Build an **irrigation system diagram** with pipe lengths, head positions, and zone map
+- [ ] Produce a **seasonal maintenance calendar** for the new backyard
+- [ ] Verify **HOA guidelines** for Sterling Ranch and flag any potential compliance issues
+
+---
+
+## 9. Conversation Key Decisions Log
+
+This log records every confirmed design decision in chronological order, useful for resolving any future ambiguity.
+
+```
+[D01] Orientation: Plot plan UP = East (slightly south of true east). Confirmed.
+[D02] Deck is INSIDE house footprint (not cantilevered). Size: 20×10 ft.
+[D03] Staircase is cantilevered OUTSIDE east wall. It descends from deck NE corner southward.
+      Staircase length = patio length = 20 ft. Width ≈ 4 ft.
+[D04] No storage space under staircase.
+[D05] Patio is DIRECTLY BELOW deck, same footprint (20×10 ft), fully within house rectangle.
+[D06] South Pathway is existing concrete, retained as-is.
+[D07] South Pathway runs only to X=192 (east wall staircase line) — does NOT continue east.
+[D08] East wall concrete strip runs from staircase base (Y=385) to South Pathway (Y=530),
+      same width as staircase (~4 ft), forms L-turn at SE corner.
+[D09] Garden boxes (already 3 exist) are along NORTH fence, west of pear tree — not east fence.
+[D10] Pear tree is at EAST side of garden boxes, in NE corner of backyard (near east + north fence).
+[D11] Existing lawn has 2 irrigation pipes: W pipe near X=192, E pipe near X=462, both N–S.
+      4 sprinkler heads each (8 total). Both enter from north patio extension zone.
+[D12] Grass is maintained by irrigation system — design must preserve/adapt irrigation.
+[D13] Lawn: ~10 ft gap from north fence (碎石带). ~6.5 ft gap from east fence (隔离带).
+[D14] North patio extension: from existing patio north edge (Y=225) northward ~15 ft,
+      width from existing patio west edge (X=80) to staircase east edge (X=192).
+[D15] East corridor: east of staircase (X=192~224), connects north patio to south strip.
+[D16] East south strip: same 4 ft width (X=192~224), connects from staircase base to South Pathway.
+[D17] South Pathway extended east to X=224 to align with east south strip.
+[D18] Arc cut (NOT straight line) from (192,225) to (224,257), ~45° angle.
+      Upper-right triangle = lawn (green). Lower-left triangle = patio (gray).
+[D19] Patio material: natural flagstone OR large concrete pavers — not yet decided.
+[D20] Fire pit: PORTABLE/movable. Not built-in.
+[D21] Lawn retention: 1/3 to 1/2 of original. ~870 sqft focused north.
+[D22] East buffer strip (black mulch): EXISTING, retain as-is. No work needed.
+[D23] Garden box expansion: CANCELLED. 3 existing boxes are sufficient.
+[D24] North privacy planting: REMOVED from scope.
+[D25] Mulch bed plant installation: REMOVED from scope (homeowner handles separately).
+[D26] Pine tree: 1 tree, SE corner, near east fence close to south pathway.
+[D27] Irrigation redesign: contractor. West pipe moves 4 ft east. 8→6 heads. Add drip line for mulch bed.
+[D28] Downspout reroute: contractor. Underground PVC, 12 ft, pop-up emitter.
+```
+
+---
+
+## 10. File Index
+
+| File | Description | Status |
+|------|-------------|--------|
+| `backyard_plan_v11.svg` | Current SVG plan with all design elements | ✅ Current |
+| `backyard_construction_plan.docx` | Bilingual (ZH/EN) construction plan with material quantities | ✅ Current |
+| `backyard_project.md` | This file — full project context for agent handoff | ✅ Current |
+| `backyard_plan.svg` through `backyard_plan_v10.svg` | Previous versions — superseded | Archive |
+| `backyard_interactive.jsx` | React interactive plan (v1, outdated layout) | Outdated |
+| `IMG_1783.jpeg` | Photo 1: NW corner view looking SE at house | Reference |
+| `IMG_1782.jpeg` | Photo 2: S side walkout view looking NE, shows E buffer | Reference |
+| `IMG_9093.jpeg` | Photo 3: Annotated plot plan with owner's design sketch | Reference |
+| `IMG_9072.jpeg` | Photo 4: Original plot plan (clean, ground truth source) | Reference |
+
+---
+
+## Appendix: Useful References
+
+- **Douglas County setback codes**: https://www.douglas.co.us/planning/
+- **Sterling Ranch HOA**: Contact developer for CC&Rs
+- **Colorado 811 (utility locate)**: Call 811 or visit https://www.colorado811.org
+- **USDA Plant Hardiness Zone**: Zone 5b-6a for Littleton, CO at 5,721 ft elevation
+- **Denver Water conservation rebates**: https://www.denverwater.org/residential/rebates
+- **Colorado State University Extension — Lawn care**: https://extension.colostate.edu/lawn-management/
+
+---
+
+*Document generated from conversation context. Last updated: May 2026.*
+*For continuity: always load `backyard_plan_v11.svg` as the current visual reference and treat §1 Ground Truth Data as immutable unless new survey data is provided.*
