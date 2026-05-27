@@ -56,6 +56,7 @@ See [backyard_project.md § 1 Ground Truth Data](backyard_project.md#1-ground-tr
 |----------|------|
 | [backyard_project.md](backyard_project.md) | Primary reference. Contains ground truth data, all confirmed design decisions, SVG version history, material quantities, budget, construction phases, and the decision log. **Update this file as decisions are made or changed.** |
 | [backyard_construction_plan.docx](backyard_construction_plan.docx) | Bilingual construction plan with step-by-step phases and material quantities. Update in sync with `backyard_project.md`. |
+| [shopping_list.md](shopping_list.md) | Full materials shopping list with quantities, checklist, and Denver-area sourcing suggestions. Update as items are purchased. |
 | [drawings/backyard_plan_v11.svg](drawings/backyard_plan_v11.svg) | Current visual plan. All zones, dimensions, and colors reflect confirmed design as of v11. This is the reference for any visual or spatial work. |
 | [drawings/plot plan.jpg](drawings/plot%20plan.jpg) | Official plot plan scan. The primary source for all lot measurements. Do not modify. |
 
