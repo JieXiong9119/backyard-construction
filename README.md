@@ -1,8 +1,7 @@
 # Backyard Reconstruction — Project Repository
 
-**Property:** 8958 Fraser River Street, Littleton, CO  
-**Lot:** 137, Sterling Ranch Filing No. 4A, Douglas County  
-**Owner:** Jie Xiong
+**Location:** Littleton, CO (Denver metro) — USDA Zone 5b–6a  
+**Jurisdiction:** Douglas County
 
 ---
 
@@ -124,7 +123,7 @@ These rules apply to all work done in this repository — by a person or an AI a
 |----------|-----|
 | Douglas County setback codes | https://www.douglas.co.us/planning/ |
 | Colorado 811 (call before digging — required by law) | https://www.colorado811.org |
-| Sterling Ranch HOA | Contact developer for CC&Rs |
+| HOA | Contact developer for CC&Rs |
 | USDA Plant Hardiness Zone | Zone 5b–6a (Littleton, CO, 5,721 ft) |
 | Denver Water conservation rebates | https://www.denverwater.org/residential/rebates |
 | CSU Extension — Lawn care | https://extension.colostate.edu/lawn-management/ |

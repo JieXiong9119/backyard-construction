@@ -2,8 +2,7 @@
 
 > **Purpose:** This document contains all project context, ground truth data, design decisions, and current status needed for an AI agent to continue optimizing this renovation project without loss of context.
 >
-> **Property:** 8958 Fraser River Street, Littleton, CO
-> **Lot:** 137, Sterling Ranch Filing No. 4A, Douglas County
+> **Location:** Littleton, CO (Denver metro) — Douglas County
 > **Plot Plan Source:** Aztec Consultants, Inc. — dated 5/18/2021, Scale 1" = 20'
 
 ---
@@ -90,7 +89,7 @@ Plot plan orientation:
   RIGHT = South
 
 Real-world house orientation:
-  House faces west (street side = Fraser River Street)
+  House faces west (street side)
   Backyard opens east
   Morning sun hits backyard; afternoon shade from house
 ```
@@ -471,7 +470,7 @@ Points: (80,105) → (192,105) → (192,225) → arc to (224,257) → (224,530) 
 - [ ] Create a **contractor bid request template** for the irrigation work
 - [ ] Build an **irrigation system diagram** with pipe lengths, head positions, and zone map
 - [ ] Produce a **seasonal maintenance calendar** for the new backyard
-- [ ] Verify **HOA guidelines** for Sterling Ranch and flag any potential compliance issues
+- [ ] Verify **HOA guidelines** and flag any potential compliance issues
 
 ---
 
@@ -536,7 +535,7 @@ This log records every confirmed design decision in chronological order, useful 
 ## Appendix: Useful References
 
 - **Douglas County setback codes**: https://www.douglas.co.us/planning/
-- **Sterling Ranch HOA**: Contact developer for CC&Rs
+- **HOA**: Contact developer for CC&Rs
 - **Colorado 811 (utility locate)**: Call 811 or visit https://www.colorado811.org
 - **USDA Plant Hardiness Zone**: Zone 5b-6a for Littleton, CO at 5,721 ft elevation
 - **Denver Water conservation rebates**: https://www.denverwater.org/residential/rebates

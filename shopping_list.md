@@ -1,7 +1,7 @@
 # Materials Shopping List
 
 > Quantities sourced from `backyard_project.md` § 6. Update this file as purchases are made.
-> Property: 8958 Fraser River St, Littleton CO — Zone 5b–6a, Denver metro.
+> Location: Littleton, CO — Zone 5b–6a, Denver metro.
 
 ---
 
