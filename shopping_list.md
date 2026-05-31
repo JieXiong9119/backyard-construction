@@ -2,6 +2,7 @@
 
 > Quantities sourced from `backyard_project.md` § 6. Update this file as purchases are made.
 > Location: Littleton, CO — Zone 5b–6a, Denver metro.
+> **Last updated: May 2026 — Plan 3 quantities (282 sqft paving / 970 sqft mulch bed, +10 ft north extension).**
 
 ---
 
@@ -13,39 +14,41 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 |------|-----|-------|
 | 4" PVC Schedule 40 pipe | ~12 ft | Downspout underground reroute |
 | Pop-up emitter (4") | 1 | End of downspout run at lawn edge |
-| 4" PVC conduit sleeve | ~30 ft | Irrigation sleeves under new patio footprint |
+| 4" PVC conduit sleeve | ~30 ft | Irrigation sleeves under North Patio Extension footprint |
 | Irrigation pipe (existing size) | ~8 ft | West pipe reroute ~4 ft east |
 | 180° half-circle sprinkler nozzles | 2 | Replace 2 existing heads |
-| Drip irrigation line (1/2") | ~80 ft | ~612 sqft mulch bed at 12" spacing |
+| Drip irrigation line (1/2") | ~125 ft | ~1,065 sqft mulch bed + demo zone at 12" spacing |
 | Drip emitters / fittings | 1 kit | Per drip line layout |
 
 ---
 
 ## Phase 1 — Paving & Hardscape
 
+> **Total new paving: ~282 sq ft** (210 sqft North Patio Extension + 72 sqft Staircase Base Strip)
+
 ### Base Materials
 
 | Item | Qty | Unit | Notes |
 |------|-----|------|-------|
-| Class 6 road base (search: "Class 6 road base" or "3/4 minus road base") | **5 cu yd** | bulk | 4" compacted base under all paving; ¾" max particle, compacts solid |
-| Coarse concrete sand (bedding) | **1.5 cu yd** | bulk | 1" setting bed on top of base |
+| Class 6 road base (search: "Class 6 road base" or "3/4 minus road base") | **~4 cu yd** | bulk | 4" compacted base under all paving; ¾" max particle, compacts solid |
+| Coarse concrete sand (bedding) | **~1.1 cu yd** | bulk | 1" setting bed on top of base |
 
 > **Where to buy:** Order bulk from a local landscape/aggregate supplier — much cheaper than bags.
 > See sourcing suggestions at the bottom.
 
 ### Paving Material — Choose One
 
-**Option A: Natural Flagstone** (~$1,200–$2,400 total material cost)
+**Option A: Natural Flagstone** (~$700–$1,400 total material cost)
 
 | Item | Qty | Unit | Notes |
 |------|-----|------|-------|
-| Natural flagstone (1.5–2" thick) | **~400 sqft / ~3.5–4.6 tons** | pallet | Colorado buff sandstone or flagstone; 10% waste factored in |
+| Natural flagstone (1.5–2" thick) | **~310 sqft / ~2.6–3.7 tons** | pallet | Colorado buff sandstone or flagstone; 10% waste factored in |
 
-**Option B: Concrete Pavers 24"×24"** (~$600–$1,200 total material cost)
+**Option B: Concrete Pavers 24"×24"** (~$350–$700 total material cost)
 
 | Item | Qty | Unit | Notes |
 |------|-----|------|-------|
-| Concrete pavers 24"×24" | **~100 units** | pcs | ~18 lb each; 10% waste factored in |
+| Concrete pavers 24"×24" | **~78 units** | pcs | ~18 lb each; 10% waste factored in |
 
 ### Seat Wall
 
@@ -58,9 +61,9 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 
 | Item | Qty | Unit | Notes |
 |------|-----|------|-------|
-| Polymeric sand (50 lb bag) | **4 bags** | bags | Joint filler; ~1 bag per 100 sqft |
-| Flexible metal landscape edging | **~60 ft** | ft | Patio perimeter + arc cut retention |
-| Polyurethane sealant (10 oz tube) | **2 tubes** | tubes | Expansion joints at staircase + South Pathway; do NOT use polymeric sand here |
+| Polymeric sand (50 lb bag) | **3 bags** | bags | Joint filler; ~1 bag per 100 sqft |
+| Flexible metal landscape edging | **~55 ft** | ft | North Patio Extension perimeter + Staircase Base Strip |
+| Polyurethane sealant (10 oz tube) | **1 tube** | tubes | Expansion joint at Staircase Base Strip ↔ South Pathway; do NOT use polymeric sand here |
 | Landscape spikes / stakes | 1 box | box | For securing edging |
 
 ### Tools to Rent
@@ -68,7 +71,7 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 | Tool | Use | Rental duration |
 |------|-----|-----------------|
 | Plate compactor | Compact aggregate base | 1 day |
-| Angle grinder + diamond blade | Arc cut on existing concrete | 1 day |
+| Angle grinder + diamond blade | Cutting/trimming paving edges | 1 day |
 | Sod cutter | Remove lawn in excavation zones | 1 day |
 
 > **Where to rent:** Home Depot Tool Rental, Sunbelt Rentals, United Rentals (all have Littleton/Denver locations).
@@ -77,13 +80,13 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 
 ## Phase 2 — Lawn, Mulch Bed & Garden
 
-### Lawn Renovation (~870 sq ft retain + reseed)
+### Lawn Renovation (~625 sq ft retain + reseed)
 
 | Item | Qty | Unit | Notes |
 |------|-----|------|-------|
-| Premium topsoil / lawn soil | **5 cu yd** | bulk | ~2.5" amendment layer over 870 sqft |
-| Grass seed — Fine Fescue | **~3 lb** | bag | North/shaded zone (near north fence) |
-| Grass seed — Tall Fescue | **~2 lb** | bag | Traffic/sun zones |
+| Premium topsoil / lawn soil | **~3.2 cu yd** | bulk | ~2.5" amendment layer over 625 sqft |
+| Grass seed — Fine Fescue | **~2 lb** | bag | North/shaded zone (near north fence) |
+| Grass seed — Tall Fescue | **~1.5 lb** | bag | Traffic/sun zones |
 | Straw mulch | **2 bales** | bales | Seeding cover; ~1 bale per 500 sqft |
 
 > **Seed note:** For Denver metro / Zone 5b–6a at 5,700 ft elevation, choose varieties rated for Colorado high plains. Avoid Kentucky Bluegrass unless you have a full irrigation plan — Fescues are more drought-tolerant.
@@ -95,14 +98,14 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 | Commercial-grade weed barrier (3 oz min) | **~140 sqft** | roll | 2 ft wide × 66 ft long east fence interior strip |
 | Garden staples / U-pins | **~30 pcs** | bag | |
 
-### Mulch Planting Bed (~612 sq ft)
+### Mulch Planting Bed (~970 sq ft + ~95 sqft former concrete zone = ~1,065 sqft total)
 
 | Item | Qty | Unit | Notes |
 |------|-----|------|-------|
-| Commercial-grade weed barrier (3 oz min) | **~675 sqft** | roll | 10% overage; can combine order with fence strip above |
-| Garden staples / U-pins | **~100 pcs** | bag | ~1 per 6 sqft |
-| Black dyed hardwood mulch (bulk) | **~6.2 cu yd** | bulk | 3" depth over 612 sqft |
-| Stepping stones 24"×18" | **10 units** | pcs | Winding path through mulch bed |
+| Commercial-grade weed barrier (3 oz min) | **~1,170 sqft** | roll | 10% overage over 1,065 sqft; can combine order with fence strip above |
+| Garden staples / U-pins | **~160 pcs** | bag | ~1 per 7 sqft |
+| Brown dyed hardwood mulch (bulk) | **~10.8 cu yd** | bulk | 3" depth over 1,065 sqft |
+| Stepping stones 24"×18" | **17 units** | pcs | Winding path through mulch bed |
 
 ### Garden Box Surrounds
 
@@ -110,30 +113,30 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 |------|-----|------|-------|
 | Black dyed mulch (bulk) | **~0.6 cu yd** | bulk | 2" depth, ~96 sqft paths around 3 boxes — combine with mulch bed order |
 
-> **Total bulk mulch order: ~6.8 cu yd** (combine bed + box pathways in one delivery)
+> **Total bulk mulch order: ~11.4 cu yd** (combine bed + box pathways in one delivery)
 
 ---
 
 ## Summary Checklist
 
 ### Bulk deliveries to schedule (call ahead — lead time often 1–3 days)
-- [ ] Class 6 aggregate — 5 cu yd
-- [ ] Coarse concrete sand — 1.5 cu yd
-- [ ] Premium topsoil — 5 cu yd
-- [ ] Black dyed mulch — 6.8 cu yd
+- [ ] Class 6 aggregate — ~4 cu yd
+- [ ] Coarse concrete sand — ~1.1 cu yd
+- [ ] Premium topsoil — ~3.2 cu yd
+- [ ] Black dyed mulch — ~11.4 cu yd
 
 ### Store purchases
 - [ ] Paving material (flagstone OR concrete pavers) — decision pending
 - [ ] CMU blocks — 33 pcs
 - [ ] Mortar mix — 2 bags
-- [ ] Polymeric sand — 4 bags
-- [ ] Flexible metal edging — 60 ft
-- [ ] Polyurethane sealant — 2 tubes
-- [ ] Weed barrier — ~815 sqft total (mulch bed + fence strip)
-- [ ] Garden staples — ~130 pcs
-- [ ] Stepping stones 24"×18" — 10 pcs
-- [ ] Fine Fescue seed — 3 lb
-- [ ] Tall Fescue seed — 2 lb
+- [ ] Polymeric sand — 3 bags
+- [ ] Flexible metal edging — ~55 ft
+- [ ] Polyurethane sealant — 1 tube
+- [ ] Weed barrier — ~1,310 sqft total (mulch bed+demo 1,170 sqft + fence strip 140 sqft)
+- [ ] Garden staples — ~190 pcs total (mulch bed 160 + fence strip 30)
+- [ ] Stepping stones 24"×18" — 17 pcs
+- [ ] Fine Fescue seed — ~2 lb
+- [ ] Tall Fescue seed — ~1.5 lb
 - [ ] Straw mulch — 2 bales
 
 ### To rent

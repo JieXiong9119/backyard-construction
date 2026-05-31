@@ -32,16 +32,19 @@ See [backyard_project.md § 1 Ground Truth Data](backyard_project.md#1-ground-tr
 
 ```
 /
-├── README.md                        ← This file. Start here.
-├── backyard_project.md              ← Primary living doc: ground truth, design decisions, status
-├── backyard_construction_plan.docx  ← Bilingual (ZH/EN) construction plan with material quantities
-├── drawings/                        ← All spatial drawings and plan files
-│   ├── backyard_plan_v11.svg        ← Current design plan (latest version)
-│   ├── current backyard.jpg         ← Photo reference of existing backyard
-│   └── plot plan.jpg                ← Official plot plan scan (ground truth source)
-├── figures/                         ← Photos and pictures taken of the backyard
-│   └── picture.jpg
-└── archive/                         ← Superseded and early-scope documents
+├── README.md                         ← This file. Start here.
+├── backyard_project.md               ← Primary living doc: ground truth, design decisions, status
+├── backyard_construction_plan.docx   ← Bilingual (ZH/EN) construction plan with material quantities
+├── drawings/                         ← All spatial drawings and plan files
+│   ├── backyard_plan_v12.svg         ← Current SVG plan (Plan 3 layout)
+│   ├── plot plan current.jpg         ← Annotated: current state (green=grass, black=mulch, blue=concrete)
+│   ├── plot plan plan2.jpg           ← Annotated: Plan 2 (red=proposed patio, orange=mulch) — superseded
+│   ├── plot plan plan3.jpg           ← Annotated: Plan 3 — CURRENT ACTIVE DESIGN (red=delete zone)
+│   └── plot plan.jpg                 ← Official plot plan scan (ground truth source)
+├── figures/                          ← Photos and pictures taken of the backyard
+│   ├── picture.jpg
+│   └── picture2.jpg
+└── archive/                          ← Superseded and early-scope documents
     ├── initial plans.png
     ├── mark on picture.jpg
     └── concept render.png
@@ -66,15 +69,17 @@ Documents in [archive/](archive/) are for historical context only and do not ref
 
 ## Design Status
 
-**Current phase:** Pre-construction planning. Contractor quotes for Phase 0 (irrigation + downspout) not yet obtained.
+**Current plan:** Plan 3 (May 2026) — no new paving; demolish staircase + east-wall concrete; keep and expand mulch areas.
+
+**Current phase:** Pre-construction planning. Contractor quotes for Phase 0 (demolition + drip irrigation) not yet obtained.
 
 **Construction phases:**
 
 | Phase | Description | Status |
 |-------|-------------|--------|
-| Phase 0 | Contractor: irrigation reroute + downspout underground | Not started |
-| Phase 1 | DIY: paving (360 sq ft north patio + corridors), seat wall, fire pit zone | Not started |
-| Phase 2 | DIY: lawn reseeding, mulch bed, garden box surrounds | Not started |
+| Phase 0 | Contractor: demolish staircase + east-wall concrete strip; add drip irrigation to mulch bed | Not started |
+| Phase 1 | DIY: grade former concrete zone, fire pit zone prep | Not started |
+| Phase 2 | DIY: lawn reseeding, mulch bed, former concrete zone, garden box surrounds | Not started |
 
 Open decisions and next steps are tracked in [backyard_project.md § 8](backyard_project.md#8-open-questions--next-steps).
 

@@ -152,8 +152,8 @@ Key Y coordinates:
 |---------|----------|-----------|------|
 | Concrete patio (walkout) | X=80~160, Y=225~385 | Functional, cluttered | Clear & reuse |
 | South Pathway | X=20~192, Y=530~610 | 9.96 ft wide, 13% slope | Retain as-is |
-| East wall concrete strip | X=160~192, Y=385~530 | Staircase-width strip | Extend eastward |
-| L-turn at SE corner | X=160~192, Y≈530 | Connects strip to pathway | Retain |
+| Staircase base strip | X=160~192, Y=385~530 | Currently rock-filled (not concrete); below staircase, connects patio east edge to grass edge | Pave — extend patio |
+| L-turn at SE corner | X=160~192, Y≈530 | Connects staircase base strip to South Pathway | Retain / integrate into paving |
 | Downspout (north side) | ~X=155, Y=145 | Surface exit in patio zone | Reroute underground |
 
 ### Existing Vegetation
@@ -191,7 +191,9 @@ Key Y coordinates:
 
 ### 4.1 Patio System (Phase 1)
 
-**North Patio Extension**
+> **Plan 3 update (May 2026)**: North Patio Extension and seat wall are still active. East Corridor and East South Strip are cancelled. See §4.11 for demolition of existing east-wall concrete, and §9 [D29]–[D31].
+
+**North Patio Extension** — ACTIVE
 - Size: ~14 ft × 15 ft = 210 sq ft
 - Location: North of existing patio, X=80~192, Y=105~225
 - Material: Natural flagstone OR large concrete pavers (24"×24" or 24"×48") — homeowner to choose
@@ -199,30 +201,45 @@ Key Y coordinates:
 - Feature: Low seat wall (12–15" high, 16–18" wide) at Y=225 separating from existing patio level
 - Grade handling: 10% slope → two-tier terrace; north extension sits ~12–15" lower than existing patio
 
-**Curved Diagonal Cut (Arc)**
-- Shape: Curved arc (NOT straight line) — confirmed in v10+
+**Curved Diagonal Cut (Arc)** — ACTIVE (north patio NE corner transition)
+- Shape: Curved arc (NOT straight line)
 - Start: Existing patio NE corner at (X=192, Y=225)
 - End: East corridor at (X=224, Y=257)
 - Direction: ~45° SE diagonal arc
-- Effect: Upper-right triangle (lawn side) = green; lower-left triangle (patio side) = paving
+- Note: Arc cut is still needed at the NE corner of the North Patio Extension even though the East Corridor is cancelled
 
-**East Corridor**
-- Size: ~4 ft wide × 20 ft long = ~78 sq ft (net of arc cutout)
-- Location: X=192~224, Y=225~385 (east of staircase)
-- Purpose: Bypass staircase, connect north patio to east south strip
-- Matches staircase height (flush or 0.25" lower)
-- Expansion joint between corridor and staircase: 0.5"
+**Seat wall** — ACTIVE (confirmed May 2026)
+- Location: Y=225, along south edge of North Patio Extension
+- Height: 12–15", Width: 16–18"
+- Material: CMU blocks 8×8×16", mortar-set (3 courses)
+- Length: 14 ft
+- Purpose: Grade separation + seating
 
-**East South Strip**
-- Size: 4 ft wide × 18 ft long = 72 sq ft
-- Location: X=192~224, Y=385~530
-- Purpose: Continue circulation south to South Pathway
-- Expansion joint at South Pathway connection: 0.5"
+**Staircase Base Strip** — ACTIVE
+- Size: ~4 ft wide × 18 ft long = ~72 sq ft
+- Location: X=160~192, Y=385~530 (directly below staircase, same footprint width)
+- Current state: rock-filled (not concrete) — clear rocks, install paving
+- Purpose: complete the patio edge connection from staircase base to South Pathway
+- Material: match North Patio Extension paving
 
-**Full Patio Outline (SVG polygon)**
-```
-Points: (80,105) → (192,105) → (192,225) → arc to (224,257) → (224,530) → (160,530) → (160,385) → (80,385)
-```
+~~**East Corridor** (~4 ft × 20 ft, X=192~224, Y=225~385, east of staircase into grass)~~ — **CANCELLED (Plan 3)**
+- This was the extension *beyond* the staircase footprint into the grass/yard. Not needed.
+
+~~**East South Strip** (~4 ft × 18 ft, X=192~224, Y=385~530, east of staircase footprint into grass/mulch)~~ — **CANCELLED (Plan 3)**
+- This was the eastward extension from the staircase edge into the existing grass and black mulch area. Not needed.
+
+---
+
+### 4.11 Demolition Scope (Plan 3, replaces §4.1 paving)
+
+**East-wall concrete strip removal**
+- Demolish the existing concrete L-shaped path: east-wall strip (X=160~192, Y=385~530) + L-turn connecting to South Pathway at Y≈530
+- Area to be graded, amended, and converted to mulch or lawn after removal
+
+**What is NOT demolished**
+- Existing staircase (X=160~192, Y=225~385) — existing structure, retained as-is
+- Existing walkout patio slab under deck (X=80~160, Y=225~385) — retain
+- South Pathway (X=20~192, Y=530~610) — retain as-is
 
 ### 4.2 Fire Pit
 
@@ -243,9 +260,9 @@ Points: (80,105) → (192,105) → (192,225) → arc to (224,257) → (224,530) 
 
 ### 4.4 Mulch Planting Bed
 
-- Area: ~612 sq ft (X=224~468, Y=385~530)
-- Materials: Commercial-grade weed barrier + black dyed mulch, 3" depth
-- Features: Stepping stones (10× 24"×18" stones) winding through bed
+- Area: ~970 sq ft (X=192~468, Y=305~530) — north edge extended +10 ft total from staircase base line
+- Materials: Commercial-grade weed barrier + brown dyed mulch, 3" depth
+- Features: Stepping stones (17× 24"×18" stones) winding through bed
 - Drip irrigation branch from west main pipe
 
 ### 4.5 East Buffer Strip
@@ -281,6 +298,8 @@ Points: (80,105) → (192,105) → (192,225) → arc to (224,257) → (224,530) 
 | North privacy planting (Serviceberry) | Removed from scope |
 | Garden box expansion (new boxes) | Already have 3, no expansion needed |
 | East buffer strip renovation | Black mulch already exists, retain as-is |
+| **East Corridor** (78 sq ft new paving east of staircase) | **Plan 3 decision — cancelled May 2026** |
+| **East South Strip** (72 sq ft new paving, staircase base to South Pathway) | **Plan 3 decision — cancelled May 2026** |
 
 ### 4.10 South Pathway
 
@@ -305,7 +324,8 @@ Points: (80,105) → (192,105) → (192,225) → arc to (224,257) → (224,530) 
 | v8 | backyard_plan_v8.svg | Lawn polygon extended to fill NE strip and diagonal triangle (error — wrong fill) |
 | v9 | backyard_plan_v9.svg | Lawn polygon corrected to Y=225 stop |
 | v10 | backyard_plan_v10.svg | Diagonal corrected: upper-right = lawn, lower-left = patio; straight line used |
-| **v11** | **backyard_plan_v11.svg** | **Current: Arc cut, black mulch strip, 3 garden boxes, stepping stones, pine tree SE, irrigation system** |
+| v11 | backyard_plan_v11.svg (archived) | Arc cut, black mulch strip, 3 garden boxes, stepping stones, pine tree SE, irrigation system — Plan 2 |
+| **v12** | **backyard_plan_v12.svg** | **Plan 3: East Corridor + East South Strip removed; Staircase Base Strip added as new paving; lawn/mulch extended to X=192** |
 
 ### Current SVG (v11) Zone Color Key
 
@@ -336,106 +356,113 @@ Points: (80,105) → (192,105) → (192,225) → arc to (224,257) → (224,530) 
 
 ## 6. Material Quantities & Budget
 
+> **Updated for Plan 3 (May 2026)**: All paving quantities have been removed. New scope is demolition of staircase + east-wall concrete, followed by mulch/lawn work.
+
 ### Area Summary
 
-| Zone | Dimensions | Area |
-|------|-----------|------|
-| North Patio Extension | 14 ft × 15 ft | 210 sq ft |
-| East Corridor | 4 ft × 20 ft − arc (~2 sq ft) | ~78 sq ft |
-| East South Strip | 4 ft × 18 ft | 72 sq ft |
-| **Total new paving** | | **~360 sq ft** |
-| Lawn (retained) | ~34 ft × 28 ft − fire pit | ~870 sq ft |
-| Mulch planting bed | ~34 ft × 18 ft | ~612 sq ft |
-| Fire pit circle | dia. 10 ft | ~79 sq ft |
+| Zone | Dimensions | Area | Notes |
+|------|-----------|------|-------|
+| **North Patio Extension** | 14 ft × 15 ft | **210 sq ft** | Active — Phase 1 DIY |
+| **Staircase Base Strip** | 4 ft × 18 ft | **72 sq ft** | Active — below staircase, currently rocks |
+| ~~East Corridor~~ | ~~4 ft × 20 ft, X=192~224~~ | ~~78 sq ft~~ | Cancelled (Plan 3) — was extension east into grass |
+| ~~East South Strip~~ | ~~4 ft × 18 ft, X=192~224~~ | ~~72 sq ft~~ | Cancelled (Plan 3) — was extension east into grass/mulch |
+| **Total new paving** | | **~282 sq ft** | |
+| Lawn (retained) | ~34 ft × 18 ft | ~625 sq ft | South edge moved 10 ft north for mulch extension |
+| Mulch planting bed | ~34 ft × 28 ft | ~970 sq ft | North edge extended +10 ft (Y=305~530) |
+| Mulch / lawn (former concrete zone) | ~4 ft × ~18 ft | ~95 sq ft | Area freed by demolition |
+| Fire pit circle | dia. 10 ft | ~79 sq ft | |
 
-### Material Quantities
+### Material Quantities (Plan 3)
 
 | Material | Calculation | Quantity | Unit |
 |----------|------------|----------|------|
-| Class 6 aggregate base (4") | 360 sqft × 4/12 ft × 1.05 waste | **~5 cu yd** | (~135 cu ft) |
-| Coarse sand bedding (1") | 360 sqft × 1/12 ft × 1.05 waste | **~1.5 cu yd** | (~34 cu ft) |
-| Flagstone (option A) | 360 sqft × 1.10 waste | **~396 sqft / ~3.5–4.6 tons** | 15–20 lb/sqft |
-| Concrete pavers 24"×24" (option B) | 360 sqft / 4 sqft × 1.10 | **~100 units / ~1,800 lb** | 18 lb/unit |
+| Class 6 aggregate base (4") | 282 sqft × 4/12 ft × 1.05 waste | **~3.9 cu yd** | (~105 cu ft) |
+| Coarse sand bedding (1") | 282 sqft × 1/12 ft × 1.05 waste | **~1.1 cu yd** | (~29 cu ft) |
+| Flagstone (option A) | 282 sqft × 1.10 waste | **~310 sqft / ~2.6–3.7 tons** | 15–20 lb/sqft |
+| Concrete pavers 24"×24" (option B) | 282 sqft / 4 sqft × 1.10 | **~78 units / ~1,400 lb** | 18 lb/unit |
 | CMU blocks 8×8×16" (seat wall) | 14 ft × 3 courses × ~11 blocks/course | **~33 blocks** | |
 | Mortar mix | Seat wall | **~2 bags** | 60 lb/bag |
-| Polymeric sand | ~1 bag/100 sqft | **~4 bags** | 50 lb/bag |
-| Flexible metal edging | Patio perimeter + arc | **~60 ft** | |
-| Polyurethane sealant | Expansion joints | **~1.5 tubes** | 10 oz/tube |
-| PVC conduit sleeve 4" | Irrigation under patio | **~30 ft** | |
-| Commercial weed barrier | 612 sqft × 1.10 | **~675 sqft** | |
-| Garden staples / U-pins | 675 sqft × 0.15/sqft | **~100 units** | |
-| Black dyed mulch (3") | 612 sqft × 3/12 × 1.10 | **~6.2 cu yd** | (~168 cu ft) |
+| Polymeric sand | ~1 bag/100 sqft | **~3 bags** | 50 lb/bag |
+| Flexible metal edging | Patio perimeter + arc | **~55 ft** | |
+| Polyurethane sealant | Expansion joints | **~1 tube** | 10 oz/tube |
+| PVC conduit sleeve 4" | Irrigation under north patio | **~30 ft** | |
+| Commercial weed barrier | (970 bed + 95 demo zone) × 1.10 | **~1,170 sqft** | |
+| Garden staples / U-pins | 1,065 sqft × 0.15/sqft | **~160 units** | |
+| Black dyed mulch (3") | 1,065 sqft × 3/12 × 1.10 | **~10.8 cu yd** | (~292 cu ft) |
 | Mulch for box pathways (2") | 96 sqft × 2/12 | **~0.6 cu yd** | (~16 cu ft) |
 | Stepping stones 24×18" | 10 units | **~10 units / ~33 sqft** | |
-| Fine/Tall Fescue seed | 870 sqft / 1000 × 5.5 lb | **~5 lb** | |
-| Premium topsoil | 870 sqft × 2.5/12 ft | **~5 cu yd** | (~145 cu ft) |
-| Straw mulch | 870 sqft / 500 sqft per bale | **~2 bales** | |
+| Fine/Tall Fescue seed | 625 sqft / 1000 × 5.5 lb | **~3.5 lb** | |
+| Premium topsoil | 625 sqft × 2.5/12 ft | **~3.2 cu yd** | (~87 cu ft) |
+| Straw mulch | 625 sqft / 500 sqft per bale | **~2 bales** | |
+| Topsoil/fill (demo zone grading) | ~95 sqft × 2"/12 | **~0.6 cu yd** | backfill after concrete removal |
 
-### Excavation Volumes
+### Demolition & Debris
 
-| Zone | Area | Depth | Volume |
-|------|------|-------|--------|
-| North patio extension | 210 sqft | 6" | ~105 cu ft (~3.9 cu yd) |
-| East corridor | ~78 sqft | 6" | ~39 cu ft (~1.5 cu yd) |
-| East south strip | 72 sqft | 6" | ~36 cu ft (~1.3 cu yd) |
-| Mulch bed removal | 612 sqft | 4" | ~204 cu ft (~7.6 cu yd) |
-| Fire pit | ~79 sqft | 7" avg | ~46 cu ft (~1.7 cu yd) |
-| **Total** | | | **~430 cu ft (~15.9 cu yd)** |
+| Item | Estimated Concrete Volume | Notes |
+|------|--------------------------|-------|
+| East-wall strip + L-turn | ~75–100 cu ft | 4 in. slab, ~150 sqft |
+| **Total debris** | **~75–100 cu ft (~3–4 cu yd)** | Dumpster or haul-away required |
 
-### Budget Summary
+### Budget Summary (Plan 3)
 
 | Category | Low | High | Notes |
 |----------|-----|------|-------|
-| Contractor: irrigation reroute | $800 | $1,200 | Sleeve + pipe + heads + drip |
-| Contractor: downspout reroute | $200 | $400 | PVC 12 ft underground |
-| Phase 1: aggregate + sand | $250 | $450 | 5 + 1.5 cu yd |
-| Phase 1: flagstone paving | $1,200 | $2,400 | ~396 sqft |
-| Phase 1: (alt.) concrete pavers | $600 | $1,200 | ~100 units |
+| Contractor: concrete demolition (east-wall strip + L-turn) | $400 | $900 | Saw-cut, break, haul-away |
+| Contractor: irrigation sleeve + west pipe reroute | $500 | $800 | 4" PVC sleeve ~30 ft under north patio |
+| Contractor: downspout reroute | $200 | $400 | PVC 12 ft underground, pop-up emitter |
+| Contractor: drip irrigation for mulch bed | $300 | $600 | Branch from existing west pipe |
+| Phase 1: aggregate + sand | $150 | $270 | ~2.9 + 0.8 cu yd |
+| Phase 1: flagstone paving (option A) | $700 | $1,400 | ~231 sqft |
+| Phase 1: (alt.) concrete pavers (option B) | $350 | $700 | ~58 units |
 | Phase 1: seat wall + mortar | $100 | $190 | 33 blocks |
-| Phase 1: polymeric sand + edging + sealant | $125 | $225 | |
-| Phase 1: tool rentals | $230 | $380 | Compactor + grinder + sod cutter |
+| Phase 1: polymeric sand + edging + sealant | $90 | $160 | |
+| Phase 1: tool rentals | $150 | $250 | Compactor + grinder + sod cutter |
 | Phase 2: topsoil + seed + straw | $170 | $340 | |
-| Phase 2: weed barrier + mulch (bed) | $235 | $410 | |
+| Phase 2: weed barrier + mulch (895 sqft) | $330 | $560 | |
 | Phase 2: stepping stones + staples | $90 | $180 | |
-| Phase 2: box pathways mulch | $30 | $60 | |
+| Phase 2: mulch box pathways + grading fill | $50 | $110 | |
 | Misc. | $50 | $100 | |
-| **DIY Total (flagstone)** | **$2,480** | **$4,935** | |
-| **DIY Total (paver)** | **$1,880** | **$4,335** | |
-| **Grand Total incl. contractor (flagstone)** | **$3,480** | **$6,535** | |
-| **Grand Total incl. contractor (paver)** | **$2,880** | **$5,935** | |
+| **DIY Total (flagstone)** | **$1,810** | **$3,445** | |
+| **DIY Total (paver)** | **$1,460** | **$2,745** | |
+| **Grand Total incl. contractor (flagstone)** | **$3,210** | **$6,145** | |
+| **Grand Total incl. contractor (paver)** | **$2,860** | **$5,445** | |
 
 ---
 
 ## 7. Construction Plan Summary
 
+> **Updated for Plan 3 (May 2026)**: North Patio Extension retained. East Corridor + East South Strip cancelled. Existing east-wall concrete L-path to be demolished by contractor.
+
 ### Phase 0 — Contractor (Pre-season, before any paving)
 
 1. **Downspout reroute**: 4" PVC, 12 ft, 12" deep, pop-up emitter at lawn edge
-2. **Irrigation sleeve**: 4" PVC conduit, ~30 ft, through planned patio footprint
+2. **Irrigation sleeve**: 4" PVC conduit, ~30 ft, through north patio footprint
 3. **West pipe reroute**: shift ~4 ft east (old X≈192 → new X=224 edge)
 4. **Head adjustment**: 8 → 6 heads (cap 2, install 2× 180° half-circle nozzles)
-5. **Mulch drip line**: branch from west pipe, 612 sqft at 12" spacing
+5. **Mulch drip line**: branch from west pipe, ~707 sqft at 12" spacing
+6. **East-wall concrete demolition**: Saw-cut and break out existing strip (X=160~192, Y=385~530) + L-turn; haul-away ~3–4 cu yd debris
 
 ### Phase 1 — DIY (May–September)
 
 | Step | Task | Duration |
 |------|------|----------|
-| 1-A | Site clearing — 3 zones, total ~6.7 cu yd excavation | 1 day |
-| 1-B | Base course — 5 cu yd Class 6 + 1.5 cu yd sand, compact | 1 day |
+| 1-A | Site clearing — north patio zone, ~3.9 cu yd excavation | 1 day |
+| 1-B | Base course — ~2.9 cu yd Class 6 + 0.8 cu yd sand, compact | 1 day |
 | 1-C | North patio paving (210 sqft) + seat wall (14 ft, 3 courses) | 2–3 days |
-| 1-D | East corridor (78 sqft) + arc cut + staircase joint | 1–2 days |
-| 1-E | East south strip (72 sqft) + South Pathway joint | 1 day |
-| 1-F | Fire pit zone — excavate ~1.7 cu yd, gravel base, edging | 0.5 day |
+| 1-D | Staircase base strip (72 sqft) — clear rocks, base course, pave to match patio | 1 day |
+| 1-E | Grade and amend former concrete zone (~95 sqft) | 0.5 day |
+| 1-F | Fire pit zone — level pad, 4" compacted gravel base, edging | 0.5 day |
 
 ### Phase 2 — DIY (March–April or August–September)
 
 | Step | Task | Duration |
 |------|------|----------|
-| 2-A | Lawn: remove 612 sqft sod, amend 870 sqft, reseed, straw | 1–2 days |
-| 2-B | Mulch bed: remove gravel, weed barrier, stepping stones, mulch | 1–2 days |
-| 2-C | Garden box surrounds: 96 sqft mulch paths, tree rings | 0.5 day |
+| 2-A | Lawn: remove sod from reduced south zone, amend ~625 sqft, reseed, straw | 1–2 days |
+| 2-B | Mulch bed (~970 sqft, Y=305~530): weed barrier, stepping stones (17×), black mulch (3") | 1–2 days |
+| 2-C | Former concrete zone (~95 sqft): weed barrier + mulch, or reseed as lawn | 0.5 day |
+| 2-D | Garden box surrounds: 96 sqft mulch paths, tree rings | 0.5 day |
 
-**Total estimated DIY labor: 10–14 working days**
+**Total estimated DIY labor: 8–11 working days**
 
 ### Key Construction Rules
 
@@ -444,8 +471,9 @@ Points: (80,105) → (192,105) → (192,225) → arc to (224,257) → (224,530) 
 - **2% drainage slope** on all paved surfaces, draining away from house
 - All paved surfaces must respect **15 ft east setback** and **5 ft side setbacks**
 - **Arc cut**: angle grinder in 3–4 shallow passes, flexible metal edging to retain edge
-- **Expansion joints**: 0.5" gap at staircase joint and South Pathway joint, filled with polyurethane sealant (NOT polymeric sand)
+- **Expansion joint**: 0.5" gap at seat wall, filled with polyurethane sealant (NOT polymeric sand)
 - Seat wall: **mortar-set** (not dry-stack) for stability in freeze-thaw
+- **Drainage**: after concrete removal, ensure grade slopes away from house foundation (min. 2%)
 
 ---
 
@@ -453,24 +481,22 @@ Points: (80,105) → (192,105) → (192,225) → arc to (224,257) → (224,530) 
 
 ### Pending Homeowner Decisions
 
-- [ ] **Paving material choice**: Natural flagstone vs. concrete pavers 24"×24" — affects cost by ~$600–1,200
-- [ ] **Seat wall material**: Match paving stone vs. separate natural stone vs. concrete block
+- [ ] **Former concrete zone treatment**: Convert to mulch (matching south bed) OR reseed as lawn extension?
+- [ ] **Staircase base**: Confirm whether the concrete landing at the base of the staircase is part of the east-wall strip being removed, or a separate slab to retain
+- [ ] **Paving material choice**: Natural flagstone vs. concrete pavers 24"×24" — affects cost by ~$350–700
 - [ ] **Mulch bed planting**: Species selection for planting bed (not in current scope — homeowner to handle separately)
-- [ ] **Contractor selection**: Get 2–3 quotes for Phase 0 irrigation work
-- [ ] **HOA approval**: Submit application before construction
+- [ ] **Contractor selection**: Get 2–3 quotes for Phase 0 demolition + drip irrigation
+- [ ] **HOA approval**: Submit application before construction (demolition of staircase may require permit)
 
 ### Potential Agent Tasks (Optimization Opportunities)
 
-- [ ] Generate a detailed **materials shopping list** with Home Depot / Lowe's SKUs for Denver metro area
-- [ ] Create a **Gantt chart** or timeline visualization for the construction phases
-- [ ] Generate **detailed paver layout patterns** (running bond, herringbone, etc.) for the 360 sqft patio area
-- [ ] Calculate **exact seat wall coursing** (dimensions, mortar joints, cap details)
+- [ ] Update **materials shopping list** (shopping_list.md) to reflect Plan 3 quantities
+- [ ] Update **pioneer_quote_list.md** to reflect new mulch quantities (~7.6 cu yd vs. prior figure)
 - [ ] Produce a **plant palette list** for the mulch bed (drought-tolerant, Zone 5b-6a, deer-resistant options for Colorado)
-- [ ] Generate a **3D perspective sketch** or enhanced visual based on the v11 SVG
-- [ ] Create a **contractor bid request template** for the irrigation work
-- [ ] Build an **irrigation system diagram** with pipe lengths, head positions, and zone map
+- [ ] Create a **contractor bid request template** for demolition + drip irrigation
+- [ ] Update the **SVG plan** (v12) to reflect Plan 3: remove staircase, remove east-wall strip, expand mulch zone
 - [ ] Produce a **seasonal maintenance calendar** for the new backyard
-- [ ] Verify **HOA guidelines** and flag any potential compliance issues
+- [ ] Verify **HOA guidelines** and flag any permit requirements for staircase demolition
 
 ---
 
@@ -512,6 +538,22 @@ This log records every confirmed design decision in chronological order, useful 
 [D26] Pine tree: 1 tree, SE corner, near east fence close to south pathway.
 [D27] Irrigation redesign: contractor. West pipe moves 4 ft east. 8→6 heads. Add drip line for mulch bed.
 [D28] Downspout reroute: contractor. Underground PVC, 12 ft, pop-up emitter.
+[D29] PLAN 3 CHANGE (May 2026): East Corridor (78 sqft, east of staircase) CANCELLED.
+      East South Strip (72 sqft, staircase base to South Pathway) CANCELLED.
+      North Patio Extension and seat wall RETAINED — still active.
+[D30] Staircase is existing structure — retained as-is. Was never added as a new construction item.
+[D31] PLAN 3 CHANGE (May 2026): East Corridor (X=192~224, Y=225~385) and East South Strip
+      (X=192~224, Y=385~530) CANCELLED — these were eastward extensions beyond the staircase
+      footprint into the existing grass and black mulch area.
+      Staircase Base Strip (X=160~192, Y=385~530) is NOT cancelled — it stays in scope as
+      paving to fill the rock-filled strip below the staircase (patio east edge to grass edge).
+      §3 corrected: this strip is currently rock-filled, not concrete as originally documented.
+[D32] Staircase Base Strip (X=160~192, Y=385~530, ~72 sqft) confirmed as active paving scope.
+      Currently has decorative rocks — clear and pave to match North Patio Extension material.
+[D33] Mulch bed north edge extended +5 ft (Y=385→345 in SVG). Mulch area grows from ~612 to ~800 sqft.
+      Lawn south boundary moves correspondingly (lawn shrinks ~170 sqft to ~800 sqft).
+[D34] Mulch bed north edge extended another +5 ft (Y=345→305 in SVG, +10 ft total from original).
+      Mulch area now ~970 sqft. Lawn now ~625 sqft.
 ```
 
 ---
@@ -520,15 +562,16 @@ This log records every confirmed design decision in chronological order, useful 
 
 | File | Description | Status |
 |------|-------------|--------|
-| `backyard_plan_v11.svg` | Current SVG plan with all design elements | ✅ Current |
-| `backyard_construction_plan.docx` | Bilingual (ZH/EN) construction plan with material quantities | ✅ Current |
+| `drawings/backyard_plan_v12.svg` | **Current SVG plan — Plan 3 layout** (North Patio + Staircase Base Strip, no East Corridor) | ✅ Current |
+| `archive/backyard_plan_v11.svg` | Previous SVG — Plan 2 layout (superseded) | Archive |
+| `drawings/plot plan current.jpg` | Hand-annotated plot plan: current state (green=grass, black=mulch, blue=concrete) | ✅ Reference |
+| `drawings/plot plan plan2.jpg` | Hand-annotated plot plan: Plan 2 (red=proposed patio, orange=proposed mulch) | Archive |
+| `drawings/plot plan plan3.jpg` | Hand-annotated plot plan: **Plan 3 — current active design** (red=delete zone) | ✅ Current |
+| `backyard_construction_plan.docx` | Bilingual (ZH/EN) construction plan — needs update for Plan 3 | Needs update |
 | `backyard_project.md` | This file — full project context for agent handoff | ✅ Current |
-| `backyard_plan.svg` through `backyard_plan_v10.svg` | Previous versions — superseded | Archive |
+| `figures/picture2.jpg` | Overhead photo of backyard from deck | Reference |
+| `backyard_plan.svg` through `backyard_plan_v10.svg` | Previous SVG versions — superseded | Archive |
 | `backyard_interactive.jsx` | React interactive plan (v1, outdated layout) | Outdated |
-| `IMG_1783.jpeg` | Photo 1: NW corner view looking SE at house | Reference |
-| `IMG_1782.jpeg` | Photo 2: S side walkout view looking NE, shows E buffer | Reference |
-| `IMG_9093.jpeg` | Photo 3: Annotated plot plan with owner's design sketch | Reference |
-| `IMG_9072.jpeg` | Photo 4: Original plot plan (clean, ground truth source) | Reference |
 
 ---
 
