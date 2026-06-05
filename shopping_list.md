@@ -44,11 +44,11 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 |------|-----|------|-------|
 | Natural flagstone (1.5–2" thick) | **~310 sqft / ~2.6–3.7 tons** | pallet | Colorado buff sandstone or flagstone; 10% waste factored in |
 
-**Option B: Concrete Pavers 24"×24"** (~$350–$700 total material cost)
+**Option B: Concrete Pavers 24"×24"** (~$350–$700 total material cost) ← **SELECTED: Home Depot grey stone**
 
 | Item | Qty | Unit | Notes |
 |------|-----|------|-------|
-| Concrete pavers 24"×24" | **~78 units** | pcs | ~18 lb each; 10% waste factored in |
+| Concrete pavers 24"×24" (Home Depot grey stone) | **94 units** | pcs | ~18 lb each; grid-counted: 74 (north patio, 8 cols × 10 rows, trapezoid cut) + 20 (staircase strip, 10×2) |
 
 ### Seat Wall
 
@@ -126,7 +126,7 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 - [ ] Black dyed mulch — ~11.4 cu yd
 
 ### Store purchases
-- [ ] Paving material (flagstone OR concrete pavers) — decision pending
+- [ ] Concrete pavers 24"×24" grey stone (Home Depot) — **94 pcs**
 - [ ] CMU blocks — 33 pcs
 - [ ] Mortar mix — 2 bags
 - [ ] Polymeric sand — 3 bags
