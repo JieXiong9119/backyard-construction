@@ -6,18 +6,26 @@
 
 ---
 
-## Phase 0 — Contractor-Supplied (for reference when getting quotes)
+## Subplan 1 Pre-paving — DIY Irrigation
 
-These items are typically supplied and installed by the irrigation/plumbing contractor. Include in your bid request so the contractor prices materials too — or purchase yourself and deduct from labor quote.
+> Install before any excavation or base course. See `task_details/irrigation_sleeve.md` for full steps.
 
 | Item | Qty | Notes |
 |------|-----|-------|
-| 4" PVC Schedule 40 pipe | ~12 ft | Downspout underground reroute |
-| Pop-up emitter (4") | 1 | End of downspout run at lawn edge |
-| 4" PVC conduit sleeve | ~30 ft | Irrigation sleeves under North Patio Extension footprint |
-| Irrigation pipe (existing size) | ~8 ft | West pipe reroute ~4 ft east |
-| 180° half-circle sprinkler nozzles | 2 | Replace 2 existing heads |
-| Drip irrigation line (1/2") | ~125 ft | ~1,065 sqft mulch bed + demo zone at 12" spacing |
+| 4" Schedule 40 PVC pipe | ~18 ft | Sleeve for west irrigation pipe under patio — 15 ft run + buffer |
+| 4" PVC threaded end caps (removable) | 2 | One per sleeve end — must stay hand-removable for future access |
+| Barbed poly coupler (match existing pipe size — likely 1") | 2 | Reconnect pipe at sleeve entry/exit |
+| Stainless hose clamps (match pipe size) | 4 | 2 per reconnection point |
+| Pipe lubricant or dish soap | 1 small bottle | Thread irrigation pipe through sleeve |
+| 180° half-circle sprinkler nozzles (Hunter or Rain Bird — check existing brand) | 2 | Cap 2 north heads; replace nozzles on 2 remaining heads |
+
+## Phase 0 — Contractor-Supplied (Subplan 2 drip irrigation only)
+
+> Downspout reroute is DIY roll-out extender (no materials needed beyond elbow adjustment). West pipe reroute cancelled — east corridor no longer in scope.
+
+| Item | Qty | Notes |
+|------|-----|-------|
+| Drip irrigation line (1/2") | ~125 ft | ~970 sqft mulch bed at 12" line spacing — contractor to confirm exact quantity |
 | Drip emitters / fittings | 1 kit | Per drip line layout |
 
 ---
@@ -98,13 +106,13 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 | Commercial-grade weed barrier (3 oz min) | **~140 sqft** | roll | 2 ft wide × 66 ft long east fence interior strip |
 | Garden staples / U-pins | **~30 pcs** | bag | |
 
-### Mulch Planting Bed (~970 sq ft + ~95 sqft former concrete zone = ~1,065 sqft total)
+### Mulch Planting Bed (~970 sq ft)
 
 | Item | Qty | Unit | Notes |
 |------|-----|------|-------|
-| Commercial-grade weed barrier (3 oz min) | **~1,170 sqft** | roll | 10% overage over 1,065 sqft; can combine order with fence strip above |
-| Garden staples / U-pins | **~160 pcs** | bag | ~1 per 7 sqft |
-| Brown dyed hardwood mulch (bulk) | **~10.8 cu yd** | bulk | 3" depth over 1,065 sqft |
+| Commercial-grade weed barrier (3 oz min) | **~1,070 sqft** | roll | 10% overage over 970 sqft; can combine order with fence strip above |
+| Garden staples / U-pins | **~140 pcs** | bag | ~1 per 7 sqft |
+| Brown dyed hardwood mulch (bulk) | **~9.9 cu yd** | bulk | 3" depth over 970 sqft |
 | Stepping stones 24"×18" | **17 units** | pcs | Winding path through mulch bed |
 
 ### Garden Box Surrounds
@@ -113,7 +121,7 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 |------|-----|------|-------|
 | Black dyed mulch (bulk) | **~0.6 cu yd** | bulk | 2" depth, ~96 sqft paths around 3 boxes — combine with mulch bed order |
 
-> **Total bulk mulch order: ~11.4 cu yd** (combine bed + box pathways in one delivery)
+> **Total bulk mulch order: ~10.5 cu yd** (combine bed 9.9 cu yd + box pathways 0.6 cu yd in one delivery)
 
 ---
 
@@ -125,15 +133,22 @@ These items are typically supplied and installed by the irrigation/plumbing cont
 - [ ] Premium topsoil — ~3.2 cu yd
 - [ ] Black dyed mulch — ~11.4 cu yd
 
-### Store purchases
+### Store purchases — Subplan 1 (Patio)
+- [ ] 4" Schedule 40 PVC pipe — ~18 ft (irrigation sleeve)
+- [ ] 4" PVC threaded end caps — 2
+- [ ] Barbed poly coupler (1") — 2
+- [ ] Stainless hose clamps — 4
+- [ ] 180° half-circle sprinkler nozzles (Hunter or Rain Bird) — 2
 - [ ] Concrete pavers 24"×24" grey stone (Home Depot) — **94 pcs**
 - [ ] CMU blocks — 33 pcs
 - [ ] Mortar mix — 2 bags
 - [ ] Polymeric sand — 3 bags
 - [ ] Flexible metal edging — ~55 ft
 - [ ] Polyurethane sealant — 1 tube
-- [ ] Weed barrier — ~1,310 sqft total (mulch bed+demo 1,170 sqft + fence strip 140 sqft)
-- [ ] Garden staples — ~190 pcs total (mulch bed 160 + fence strip 30)
+
+### Store purchases — Subplan 2 (Lawn + Mulch)
+- [ ] Weed barrier — ~1,210 sqft total (mulch bed 1,070 sqft + fence strip 140 sqft)
+- [ ] Garden staples — ~170 pcs total (mulch bed 140 + fence strip 30)
 - [ ] Stepping stones 24"×18" — 17 pcs
 - [ ] Fine Fescue seed — ~2 lb
 - [ ] Tall Fescue seed — ~1.5 lb

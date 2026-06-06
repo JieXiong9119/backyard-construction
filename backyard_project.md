@@ -268,16 +268,19 @@ Key Y coordinates:
 
 ### 4.7 Irrigation System
 
-- **To be done by contractor** (Phase 0, before any paving)
-- West pipe: shift ~4 ft east to clear east corridor
-- Both pipes: install 4" PVC conduit sleeve (~30 ft total) under new patio
-- Heads: reduce 8 → 6 (3 per pipe, 180° half-circle nozzles, ~9 ft spacing)
-- New: drip irrigation for mulch bed (~612 sq ft, 12" line spacing)
+**Subplan 1 — contractor, before paving:**
+- West pipe only: 4" PVC conduit sleeve (~15 ft) under north patio footprint — east pipe at X=462 is outside patio footprint, no sleeve needed
+- Heads: reduce 8 → 6 (cap 2 in north zone, install 2× 180° half-circle nozzles, ~9 ft spacing)
+- See [`task_details/irrigation_sleeve.md`](task_details/irrigation_sleeve.md) for full contractor brief
+
+**Subplan 2 — contractor, before mulch installation:**
+- New: drip irrigation for mulch bed (~970 sq ft, 12" line spacing, branch from west pipe)
 
 ### 4.8 Downspout
 
-- **To be done by contractor** (Phase 0)
-- 4" PVC underground, ~12 ft, buried 12", pop-up emitter at lawn edge
+- **🟡 Partially done** — existing roll-out extender is in place and functional
+- **Remaining:** Re-orient bottom elbow to point east (toward lawn at X=192+) after east-side pavers are laid
+- See [`task_details/downspout_reroute.md`](task_details/downspout_reroute.md) for details
 
 ### 4.9 Items Explicitly REMOVED from Scope
 
@@ -373,7 +376,7 @@ Key Y coordinates:
 | Polymeric sand | ~1 bag/100 sqft | **~3 bags** | 50 lb/bag |
 | Flexible metal edging | Patio perimeter + arc | **~55 ft** | |
 | Polyurethane sealant | Expansion joints | **~1 tube** | 10 oz/tube |
-| PVC conduit sleeve 4" | Irrigation under north patio | **~30 ft** | |
+| PVC conduit sleeve 4" | West pipe under north patio only | **~15 ft** | East pipe outside patio footprint — no sleeve needed |
 | Commercial weed barrier | 970 bed × 1.10 | **~1,070 sqft** | |
 | Garden staples / U-pins | 1,065 sqft × 0.15/sqft | **~160 units** | |
 | Black dyed mulch (3") | 970 sqft × 3/12 × 1.10 | **~9.9 cu yd** | (~267 cu ft) |
@@ -409,46 +412,69 @@ Key Y coordinates:
 
 ## 7. Construction Plan Summary
 
-> **Updated for Plan 3 (May 2026)**: North Patio Extension retained. East Corridor + East South Strip cancelled. Existing east-wall concrete strip retained as-is.
+> Two independent subplans — either can proceed first or in parallel. No shared work zones or sequencing dependency between them.
 
-### Phase 0 — Contractor (Pre-season, before any paving)
+---
 
-1. **Downspout reroute**: 4" PVC, 12 ft, 12" deep, pop-up emitter at lawn edge
-2. **Irrigation sleeve**: 4" PVC conduit, ~30 ft, through north patio footprint
-3. **West pipe reroute**: shift ~4 ft east (old X≈192 → new X=224 edge)
-4. **Head adjustment**: 8 → 6 heads (cap 2, install 2× 180° half-circle nozzles)
-5. **Mulch drip line**: branch from west pipe, ~707 sqft at 12" spacing
+### Subplan 1: Patio Extension
 
-### Phase 1 — DIY (May–September)
+**Scope:** North Patio Extension (246.4 sqft) + Staircase Base Strip (70.3 sqft) + seat wall
+**Best season:** May–September (paving)
 
-| Step | Task | Duration |
-|------|------|----------|
-| 1-A | Site clearing — north patio zone, ~3.9 cu yd excavation | 1 day |
-| 1-B | Base course — ~2.9 cu yd Class 6 + 0.8 cu yd sand, compact | 1 day |
-| 1-C | North patio paving (210 sqft) + seat wall (14 ft, 3 courses) | 2–3 days |
-| 1-D | Staircase base strip (72 sqft) — clear rocks, base course, pave to match patio | 1 day |
-| 1-E | Fire pit zone — level pad, 4" compacted gravel base, edging | 0.5 day |
-
-### Phase 2 — DIY (March–April or August–September)
+#### DIY Steps
 
 | Step | Task | Duration |
 |------|------|----------|
-| 2-A | Lawn: remove sod from reduced south zone, amend ~625 sqft, reseed, straw | 1–2 days |
-| 2-B | Mulch bed (~970 sqft, Y=305~530): weed barrier, stepping stones (17×), black mulch (3") | 1–2 days |
-| 2-C | Garden box surrounds: 96 sqft mulch paths, tree rings | 0.5 day |
+| P1-A | Irrigation sleeve (~15 ft, west pipe only) + head adjustment (8→6) — see `task_details/irrigation_sleeve.md` | 0.5–1 day |
+| P1-B | Site clearing — north patio zone, ~3.9 cu yd excavation | 1 day |
+| P1-C | Base course — ~2.9 cu yd Class 6 + 0.8 cu yd sand, compact | 1 day |
+| P1-D | North patio paving (246.4 sqft) + seat wall (14 ft, 3 courses) | 2–3 days |
+| P1-E | Staircase base strip (70.3 sqft) — clear rocks, base course, pave to match | 1 day |
+| P1-F | 🟡 Downspout elbow re-orient east (after east-side pavers laid) | 0.5 day |
 
-**Total estimated DIY labor: 8–11 working days**
+**Subplan 1 DIY labor: ~6–7.5 days**
 
-### Key Construction Rules
+#### Key Rules
 
-- **Call 811** before ANY digging (Colorado state law)
-- **4" compacted Class 6 base** is mandatory for all paved surfaces — freeze-thaw protection
+- **Call 811** before any digging (Colorado state law)
+- **4" compacted Class 6 base** mandatory for all paved surfaces — freeze-thaw protection
 - **2% drainage slope** on all paved surfaces, draining away from house
 - All paved surfaces must respect **15 ft east setback** and **5 ft side setbacks**
 - **Arc cut**: angle grinder in 3–4 shallow passes, flexible metal edging to retain edge
 - **Expansion joint**: 0.5" gap at seat wall, filled with polyurethane sealant (NOT polymeric sand)
 - Seat wall: **mortar-set** (not dry-stack) for stability in freeze-thaw
-- **Drainage**: ensure all paved and graded surfaces slope away from house foundation (min. 2%)
+- **Drainage**: all paved surfaces slope away from house foundation (min. 2%)
+
+---
+
+### Subplan 2: Lawn Reduction + Mulch
+
+**Scope:** Reduce lawn to ~625 sqft (north zone); convert ~970 sqft south zone to mulch bed; fire pit pad; garden box surrounds
+**Best season:** August 15 – September 15 for seeding; mulch any time
+**Work zone:** X=192~468, Y=305~530 — no overlap with patio footprint
+
+#### Pre-req — Contractor (before mulch installation)
+
+1. **Mulch bed drip line**: branch from west irrigation pipe, ~970 sqft at 12" line spacing
+
+#### DIY Steps
+
+| Step | Task | Duration |
+|------|------|----------|
+| M2-A | Lawn: remove sod from south zone, amend ~625 sqft retained area, reseed, straw | 1–2 days |
+| M2-B | Mulch bed (~970 sqft, Y=305~530): weed barrier, stepping stones (17×), black mulch (3") | 1–2 days |
+| M2-C | Fire pit zone: level pad, 4" compacted gravel base, edging | 0.5 day |
+| M2-D | Garden box surrounds: 96 sqft mulch paths, tree rings | 0.5 day |
+
+**Subplan 2 DIY labor: ~3–5 days**
+
+#### Key Rules
+
+- **Call 811** before any digging
+- Weed barrier: commercial-grade, overlap seams 6", pin every 18"
+- Mulch depth: 3" after settling (apply ~3.5" to account for compaction)
+- Seeding window: August 15 – September 15 for best germination (Colorado Zone 5b–6a)
+- **Weed barrier strip**: 2 ft wide along east fence interior (entire 66 ft) to block rangeland weed invasion
 
 ---
 
@@ -456,9 +482,11 @@ Key Y coordinates:
 
 ### Pending Homeowner Decisions
 
+- [x] **Downspout reroute method**: Option B (roll-out extender, DIY) — re-orient elbow east after east-side pavers are laid
 - [x] **Paving material choice**: ~~Natural flagstone vs. concrete pavers~~ → **Home Depot grey stone pavers** confirmed [D35]
 - [ ] **Mulch bed planting**: Species selection for planting bed (not in current scope — homeowner to handle separately)
-- [ ] **Contractor selection**: Get 2–3 quotes for Phase 0 drip irrigation + downspout + irrigation sleeve
+- [ ] **Contractor selection (Subplan 1)**: Get 2–3 quotes for irrigation sleeve (~30 ft) + head adjustment (8→6)
+- [ ] **Contractor selection (Subplan 2)**: Get 2–3 quotes for mulch bed drip line (~970 sqft)
 - [ ] **HOA approval**: Submit application before construction if required
 
 ### Potential Agent Tasks (Optimization Opportunities)
