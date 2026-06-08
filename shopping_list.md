@@ -32,14 +32,14 @@
 
 ## Phase 1 — Paving & Hardscape
 
-> **Total new paving: ~282 sq ft** (210 sqft North Patio Extension + 72 sqft Staircase Base Strip)
+> **Total new paving: 316.7 sq ft** (246.4 sqft North Patio Extension + 70.3 sqft Staircase Base Strip — precise field measurements June 2026)
 
 ### Base Materials
 
 | Item | Qty | Unit | Notes |
 |------|-----|------|-------|
-| Class 6 road base (search: "Class 6 road base" or "3/4 minus road base") | **~4 cu yd** | bulk | 4" compacted base under all paving; ¾" max particle, compacts solid |
-| Coarse concrete sand (bedding) | **~1.1 cu yd** | bulk | 1" setting bed on top of base |
+| Class 6 road base (search: "Class 6 road base" or "3/4 minus road base") | **4.5 cu yd** | bulk | 316.7 sqft × 4" depth × 1.05 waste = 4.1 cu yd; order 4.5 cu yd for compaction margin |
+| Coarse concrete sand (bedding) | **1.1 cu yd** | bulk | 316.7 sqft × 1" depth × 1.05 waste = 1.0 cu yd; round up to 1.1 |
 
 > **Where to buy:** Order bulk from a local landscape/aggregate supplier — much cheaper than bags.
 > See sourcing suggestions at the bottom.
@@ -58,21 +58,13 @@
 |------|-----|------|-------|
 | Concrete pavers 24"×24" (Home Depot grey stone) | **94 units** | pcs | ~18 lb each; grid-counted: 74 (north patio, 8 cols × 10 rows, trapezoid cut) + 20 (staircase strip, 10×2) |
 
-### Seat Wall
-
-| Item | Qty | Unit | Notes |
-|------|-----|------|-------|
-| CMU blocks 8"×8"×16" | **~33 blocks** | pcs | 3-course wall, 14 ft long, ~11 blocks/course |
-| Mortar mix (60 lb bag) | **2 bags** | bags | Mortar-set only — NOT dry-stack (freeze-thaw) |
-
 ### Finishing & Edging
 
 | Item | Qty | Unit | Notes |
 |------|-----|------|-------|
 | Polymeric sand (50 lb bag) | **3 bags** | bags | Joint filler; ~1 bag per 100 sqft |
-| Flexible metal landscape edging | **~55 ft** | ft | North Patio Extension perimeter + Staircase Base Strip |
+| **Colmet 8ft × 4in 14-Gauge Black Steel Edging** (AS814-4BK) | **7 pcs** (56 ft) | pcs | $26.97/ea — buy singles, NOT the 5-pack ($202); [Home Depot link](https://www.homedepot.com/p/Colmet-8-ft-x-14-Gauge-x-4-in-Black-Steel-Landscape-Edging-AS814-4BK/202242157) |
 | Polyurethane sealant (10 oz tube) | **1 tube** | tubes | Expansion joint at Staircase Base Strip ↔ South Pathway; do NOT use polymeric sand here |
-| Landscape spikes / stakes | 1 box | box | For securing edging |
 
 ### Tools to Rent
 
@@ -128,8 +120,8 @@
 ## Summary Checklist
 
 ### Bulk deliveries to schedule (call ahead — lead time often 1–3 days)
-- [ ] Class 6 aggregate — ~4 cu yd
-- [ ] Coarse concrete sand — ~1.1 cu yd
+- [ ] Class 6 aggregate — **4.5 cu yd** (4.1 calculated + compaction margin)
+- [ ] Coarse concrete sand — **1.1 cu yd**
 - [ ] Premium topsoil — ~3.2 cu yd
 - [ ] Black dyed mulch — ~11.4 cu yd
 
@@ -140,10 +132,8 @@
 - [ ] Stainless hose clamps — 4
 - [ ] 180° half-circle sprinkler nozzles (Hunter or Rain Bird) — 2
 - [ ] Concrete pavers 24"×24" grey stone (Home Depot) — **94 pcs**
-- [ ] CMU blocks — 33 pcs
-- [ ] Mortar mix — 2 bags
 - [ ] Polymeric sand — 3 bags
-- [ ] Flexible metal edging — ~55 ft
+- [ ] Colmet 14-gauge black steel edging (AS814-4BK) — **7 singles** (~$189 total)
 - [ ] Polyurethane sealant — 1 tube
 
 ### Store purchases — Subplan 2 (Lawn + Mulch)
@@ -205,7 +195,8 @@
 ### Weed Barrier, Edging & Finishing
 | Supplier | Notes |
 |----------|-------|
-| **Home Depot / Lowe's** | DeWitt or Vigoro commercial-grade weed barrier; metal edging; polymeric sand (Gator Sand) |
+| **Home Depot / Lowe's** | DeWitt or Vigoro commercial-grade weed barrier; polymeric sand (Gator Sand) |
+| **Home Depot** | **Paver edging: Colmet 8ft 14-gauge black steel (AS814-4BK) — $26.97/ea, buy 7 singles** |
 | **Amazon** | Good for bulk U-pins/staples, edging rolls, polyurethane sealant (Sikaflex 1a) |
 
 ### Tool Rentals

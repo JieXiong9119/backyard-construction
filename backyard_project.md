@@ -198,8 +198,7 @@ Key Y coordinates:
 - Location: North of existing patio, X=80~192, Y=105~225
 - Material: **Home Depot grey stone pavers** — confirmed [D35]
 - Purpose: Outdoor dining area + grill station
-- Feature: Low seat wall (12–15" high, 16–18" wide) at Y=225 separating from existing patio level
-- Grade handling: 10% slope → two-tier terrace; north extension sits ~12–15" lower than existing patio
+- Grade handling: 10% slope → north extension is lower than existing patio; edge at Y=225 uses metal paver edging + step treatment (no seat wall)
 
 **Curved Diagonal Cut (Arc)** — ACTIVE (north patio NE corner transition)
 - Shape: Curved arc (NOT straight line)
@@ -208,12 +207,9 @@ Key Y coordinates:
 - Direction: ~45° SE diagonal arc
 - Note: Arc cut is still needed at the NE corner of the North Patio Extension even though the East Corridor is cancelled
 
-**Seat wall** — ACTIVE (confirmed May 2026)
-- Location: Y=225, along south edge of North Patio Extension
-- Height: 12–15", Width: 16–18"
-- Material: CMU blocks 8×8×16", mortar-set (3 courses)
-- Length: 14 ft
-- Purpose: Grade separation + seating
+~~**Seat wall**~~ — **CANCELLED (June 2026)** [D36]
+- Was: Y=225, south edge of North Patio Extension, CMU 8×8×16" mortar-set, 3 courses, 14 ft
+- Removed from scope — edge at Y=225 handled by paver edging + step transition only
 
 **Staircase Base Strip** — ACTIVE
 - Size: 220" long × 46" wide = **70.3 sq ft**
@@ -367,14 +363,12 @@ Key Y coordinates:
 
 | Material | Calculation | Quantity | Unit |
 |----------|------------|----------|------|
-| Class 6 aggregate base (4") | 282 sqft × 4/12 ft × 1.05 waste | **~3.9 cu yd** | (~105 cu ft) |
-| Coarse sand bedding (1") | 282 sqft × 1/12 ft × 1.05 waste | **~1.1 cu yd** | (~29 cu ft) |
-| Flagstone (option A) | 282 sqft × 1.10 waste | **~310 sqft / ~2.6–3.7 tons** | 15–20 lb/sqft |
+| Class 6 aggregate base (4") | 316.7 sqft × 4/12 ft × 1.05 waste | **~4.1 cu yd** | (~111 cu ft); order 4.5 cu yd for compaction margin |
+| Coarse sand bedding (1") | 316.7 sqft × 1/12 ft × 1.05 waste | **~1.0 cu yd** | (~28 cu ft); order 1.1 cu yd |
+| Flagstone (option A) | 316.7 sqft × 1.10 waste | **~348 sqft / ~2.9–4.2 tons** | 15–20 lb/sqft |
 | Concrete pavers 24"×24" — Home Depot grey stone | Grid count: 74 (patio) + 20 (strip) | **94 units / ~1,692 lb** | 18 lb/unit; grid-counted incl. cuts [D35] |
-| CMU blocks 8×8×16" (seat wall) | 14 ft × 3 courses × ~11 blocks/course | **~33 blocks** | |
-| Mortar mix | Seat wall | **~2 bags** | 60 lb/bag |
 | Polymeric sand | ~1 bag/100 sqft | **~3 bags** | 50 lb/bag |
-| Flexible metal edging | Patio perimeter + arc | **~55 ft** | |
+| **Colmet 8ft 14-gauge black steel edging** (AS814-4BK) | Patio perimeter + arc | **7 pcs (56 ft)** | $26.97/ea — buy singles [D37] |
 | Polyurethane sealant | Expansion joints | **~1 tube** | 10 oz/tube |
 | PVC conduit sleeve 4" | West pipe under north patio only | **~15 ft** | East pipe outside patio footprint — no sleeve needed |
 | Commercial weed barrier | 970 bed × 1.10 | **~1,070 sqft** | |
@@ -395,7 +389,6 @@ Key Y coordinates:
 | Phase 1: aggregate + sand | $150 | $270 | ~2.9 + 0.8 cu yd |
 | Phase 1: flagstone paving (option A) | $700 | $1,400 | ~231 sqft |
 | Phase 1: (alt.) concrete pavers (option B) | $350 | $700 | ~58 units |
-| Phase 1: seat wall + mortar | $100 | $190 | 33 blocks |
 | Phase 1: polymeric sand + edging + sealant | $90 | $160 | |
 | Phase 1: tool rentals | $150 | $250 | Compactor + grinder + sod cutter |
 | Phase 2: topsoil + seed + straw | $170 | $340 | |
@@ -403,10 +396,10 @@ Key Y coordinates:
 | Phase 2: stepping stones + staples | $90 | $180 | |
 | Phase 2: mulch box pathways + grading fill | $50 | $110 | |
 | Misc. | $50 | $100 | |
-| **DIY Total (flagstone)** | **$1,810** | **$3,445** | |
-| **DIY Total (paver)** | **$1,460** | **$2,745** | |
-| **Grand Total incl. contractor (flagstone)** | **$2,810** | **$5,245** | |
-| **Grand Total incl. contractor (paver)** | **$2,460** | **$4,545** | |
+| **DIY Total (flagstone)** | **$1,710** | **$3,255** | |
+| **DIY Total (paver)** | **$1,360** | **$2,555** | |
+| **Grand Total incl. contractor (flagstone)** | **$2,710** | **$5,055** | |
+| **Grand Total incl. contractor (paver)** | **$2,360** | **$4,355** | |
 
 ---
 
@@ -418,7 +411,7 @@ Key Y coordinates:
 
 ### Subplan 1: Patio Extension
 
-**Scope:** North Patio Extension (246.4 sqft) + Staircase Base Strip (70.3 sqft) + seat wall
+**Scope:** North Patio Extension (246.4 sqft) + Staircase Base Strip (70.3 sqft)
 **Best season:** May–September (paving)
 
 #### DIY Steps
@@ -428,7 +421,7 @@ Key Y coordinates:
 | P1-A | Irrigation sleeve (~15 ft, west pipe only) + head adjustment (8→6) — see `task_details/irrigation_sleeve.md` | 0.5–1 day |
 | P1-B | Site clearing — north patio zone, ~3.9 cu yd excavation | 1 day |
 | P1-C | Base course — ~2.9 cu yd Class 6 + 0.8 cu yd sand, compact | 1 day |
-| P1-D | North patio paving (246.4 sqft) + seat wall (14 ft, 3 courses) | 2–3 days |
+| P1-D | North patio paving (246.4 sqft) | 1–2 days |
 | P1-E | Staircase base strip (70.3 sqft) — clear rocks, base course, pave to match | 1 day |
 | P1-F | 🟡 Downspout elbow re-orient east (after east-side pavers laid) | 0.5 day |
 
@@ -441,8 +434,7 @@ Key Y coordinates:
 - **2% drainage slope** on all paved surfaces, draining away from house
 - All paved surfaces must respect **15 ft east setback** and **5 ft side setbacks**
 - **Arc cut**: angle grinder in 3–4 shallow passes, flexible metal edging to retain edge
-- **Expansion joint**: 0.5" gap at seat wall, filled with polyurethane sealant (NOT polymeric sand)
-- Seat wall: **mortar-set** (not dry-stack) for stability in freeze-thaw
+- **South edge (Y=225)**: metal paver edging flush with existing patio edge; install step block or bullnose paver to bridge the ~12–15" grade drop cleanly
 - **Drainage**: all paved surfaces slope away from house foundation (min. 2%)
 
 ---
@@ -541,7 +533,7 @@ This log records every confirmed design decision in chronological order, useful 
 [D28] Downspout reroute: contractor. Underground PVC, 12 ft, pop-up emitter.
 [D29] PLAN 3 CHANGE (May 2026): East Corridor (78 sqft, east of staircase) CANCELLED.
       East South Strip (72 sqft, staircase base to South Pathway) CANCELLED.
-      North Patio Extension and seat wall RETAINED — still active.
+      North Patio Extension RETAINED — still active. Seat wall was retained at this point but later cancelled [D36].
 [D30] Staircase is existing structure — retained as-is. Was never added as a new construction item.
 [D31] PLAN 3 CHANGE (May 2026): East Corridor (X=192~224, Y=225~385) and East South Strip
       (X=192~224, Y=385~530) CANCELLED — these were eastward extensions beyond the staircase
@@ -558,6 +550,12 @@ This log records every confirmed design decision in chronological order, useful 
 [D35] Paving material confirmed: Home Depot grey stone pavers (June 2026).
       Applies to both North Patio Extension (210 sqft) and Staircase Base Strip (72 sqft).
       Use concrete paver quantities and budget column (option B) for all future estimates.
+[D36] SEAT WALL CANCELLED (June 2026): CMU seat wall at Y=225 removed from scope entirely.
+[D37] PAVER EDGING CONFIRMED (June 2026): Colmet 8ft × 4in 14-Gauge Black Steel Edging (AS814-4BK).
+      7 singles at $26.97/ea (~$189 total). Do NOT buy 5-pack ($202 — more expensive per piece).
+      4" height required for proper paver containment; stakes resist Colorado freeze-thaw heave.
+      Grade transition at south edge of North Patio Extension handled by: metal paver edging +
+      1–2 step block(s) or bullnose paver to bridge ~12–15" drop to existing patio level.
 ```
 
 ---
